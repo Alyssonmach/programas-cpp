@@ -5,8 +5,8 @@
 // A função main inicia a execução do programa
 int main()
 {
-    std::cout << 'Welcome to C++!\n' // Exibe a mensagem
+    std::cout << 'Welcome to C++!\n'; // Exibe a mensagem
 
-    return 0 // Indica que o programa terminou com sucesso
+    return 0; // Indica que o programa terminou com sucesso
 
 } // Fim da função main
