@@ -1,12 +1,13 @@
 // Figura 2.1: fig02_01.cpp
-// Programa de impress√£o de texto
-# include <iostream> // Permite que o programa gere sa√≠da de dados na tela
-
-// A fun√ß√£o main inicia a execu√ß√£o do programa
+// Autor: Alysson Machado
+// Hor·rio: 09:45 AM
+// Programa de impress„o de texto
+# include <iostream> // Permite ao programa realizar entrada e saÌda
+// A funÁ„o main inicia a execuÁ„o do programa
 int main()
 {
-    std::cout << 'Welcome to C++!\n'; // Exibe a mensagem
+    std::cout << "Welcome to C++!\n"; // Exibe a mensagem
 
     return 0; // Indica que o programa terminou com sucesso
 
-} // Fim da fun√ß√£o main
+} // Fim da funÁ„o main
