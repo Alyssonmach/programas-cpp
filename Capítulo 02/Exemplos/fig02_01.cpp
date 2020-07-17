@@ -1,5 +1,6 @@
 // Figura 2.1: fig02_01.cpp
 // Autor: Alysson Machado
+// Data: 16/07/2020
 // Horário: 09:45 AM
 // Programa de impressão de texto
 # include <iostream> // Permite ao programa realizar entrada e saída
