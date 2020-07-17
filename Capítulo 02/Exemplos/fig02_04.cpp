@@ -1,5 +1,6 @@
 // Figura 2.4: fig02_04.cpp
 // Autor: Alysson Machado
+// Data: 16/07/2020
 // Horário: 10:26 AM
 // Imprimindo múltiplas linhas de texto com uma única instrução
 # include <iostream> // Permite ao programa realizar entrada e saída
