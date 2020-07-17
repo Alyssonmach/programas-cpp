@@ -1,5 +1,6 @@
 // Figura 2.2: fig02_02.cpp
 // Autor: Alysson Machado
+// Data: 16/07/2020
 // Horário: 10:13 AM
 // Programa sequências de escape
 #include <iostream> // Permite ao programa realizar entrada e saída
