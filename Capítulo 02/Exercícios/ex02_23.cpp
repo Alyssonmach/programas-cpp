@@ -1,27 +1,53 @@
-// Exercício
+// Exercício 2.23: ex02_23.cpp
 // Autor: Alysson Machado
 // Data: 20/07/2020
 // Horário: 16:39 PM
 // Maior e menor de cinco números inteiros
 #include <iostream>
-#include <locale>
 
 using std::cout;
 using std::cin;
-uisng std::endl;
+using std::endl;
 
 int main()
 {
 	
-	int int1, int2, int3, int4, int5;
+	int num1, num2, num3, num4, num5;
 	int maior, menor;
 	
 	cout << "Enter five integers: ";
-	cin >> int1 >> int2 >> int3 >> int4 >> int5;
+	cin >> num1 >> num2 >> num3 >> num4 >> num5;
 	
-	if(int1 >= int2)
-		maior = int1;
-	else if ()
-
+	if(num1 > num2 && num1 > num3 && num1 > num4 && num1 > num5) {
+	        maior = num1; }
+	    else
+	        if(num2 > num3 && num2 > num4 && num2 > num5) {
+	            maior = num2; }
+	    else
+	        if(num3 > num4 && num3 > num5) {
+	            maior = num3; }
+	    else
+	        if(num4 > num5) {
+	            maior = num4; }
+	    else {
+	        maior = num5; }
+	
+	    if(num1 < num2 && num1 < num3 && num1 < num4 && num1 < num5) {
+	        menor = num1; }
+	    else
+	        if(num2 < num3 && num2 < num4 && num2 < num5) {
+	            menor = num2; }
+	    else
+	        if(num3 < num4 && num3 < num5) {
+	            menor = num3; }
+	    else
+	        if(num4 < num5) {
+	            menor = num4; }
+	    else {
+	        menor = num5; }
+	        
+    cout << "Max number is " << maior << endl;
+    cout << "Min number is " << menor << endl;
+	
 	return 0;	
 }
