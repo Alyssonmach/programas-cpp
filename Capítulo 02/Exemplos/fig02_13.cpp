@@ -1,6 +1,4 @@
 // Figura 2.13: fig02_13.cpp
-// Data: 17/07/2020
-// Horário: 10:46 AM
 // Comparando inteiros utilizando instruções if, operadores relacionais
 #include <iostream> // Permite ao programa realizar entrada e saída
 
