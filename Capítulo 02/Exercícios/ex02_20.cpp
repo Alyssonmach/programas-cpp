@@ -1,7 +1,4 @@
 // Exercício 2.20: ex02_20.cpp
-// Autor: Alysson Machado
-// Data: 20/07/2020
-// Horário: 16:13 PM
 // Operações Trigonométricas
 #include <iostream>
 #include <locale>
