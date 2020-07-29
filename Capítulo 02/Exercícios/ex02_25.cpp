@@ -1,7 +1,4 @@
 // Exercício 2.25: ex02_25.cpp
-// Autor: Alysson Machado
-// Data: 27/07/2020
-// Horário: 16:12 PM
 // Número e múltiplo
 #include <iostream>
 
