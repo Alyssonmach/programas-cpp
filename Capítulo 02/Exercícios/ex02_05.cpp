@@ -1,6 +1,4 @@
 // Exercício 2.5: ex02_05.cpp
-// Data: 20/07/2020
-// Horário: 14:58 PM
 // Calcula o produto de três inteiros
 #include <iostream> // Permite ao programa realizar entrada e saída
 
