@@ -1,7 +1,4 @@
 // Figura 2.9: fig02_09.cpp
-// Autor: Alysson Machado
-// Data: 17/07/2020
-// Horário: 10:20 AM
 // Programa de cálculos aritméticos
 #include <iostream> // Permite ao programa realizar entrada e saída
 
