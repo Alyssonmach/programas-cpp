@@ -1,7 +1,4 @@
 // Exercício 2.23: ex02_23.cpp
-// Autor: Alysson Machado
-// Data: 20/07/2020
-// Horário: 16:39 PM
 // Maior e menor de cinco números inteiros
 #include <iostream>
 
