@@ -1,7 +1,4 @@
 // Exercício 2.29: ex02_29.cpp
-// Autor: Alysson Machado
-// Data: 27/07/2020
-// Horário: 16:41 PM
 // Quadrados e cubos
 #include <iostream>
 
