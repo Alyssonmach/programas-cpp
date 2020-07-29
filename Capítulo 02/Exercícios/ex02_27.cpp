@@ -1,7 +1,4 @@
 // Exercício 2.27: ex02_27.cpp
-// Autor: Alysson Machado
-// Data: 27/07/2020
-// Horário: 16:26 PM
 // Equivalente inteiro de um caractere
 #include <iostream>
 
