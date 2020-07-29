@@ -1,7 +1,4 @@
 // Exercício 2.21: ex02_21.cpp
-// Autor: Alysson Machado
-// Data: 20/07/2020
-// Horário: 16:13 PM
 // Impressões Geométricas
 #include <iostream>
 
