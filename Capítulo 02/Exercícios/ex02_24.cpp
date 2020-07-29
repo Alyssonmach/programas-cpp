@@ -1,7 +1,4 @@
 // Exercício 2.24: ex02_24.cpp
-// Autor: Alysson Machado
-// Data: 27/07/2020
-// Horário: 16:05 PM
 // Número ímpar e número par
 #include <iostream>
 
