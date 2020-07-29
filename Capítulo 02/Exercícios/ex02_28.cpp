@@ -1,7 +1,4 @@
 // Exercício 2.28: ex02_28.cpp
-// Autor: Alysson Machado
-// Data: 27/07/2020
-// Horário: 16:31 PM
 // Separa os digitos de um inteiro com cinco digitos
 #include <iostream>
 
