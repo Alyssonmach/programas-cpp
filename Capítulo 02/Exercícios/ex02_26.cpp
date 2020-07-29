@@ -1,7 +1,4 @@
 // Exercício 2.26: ex02_26.cpp
-// Autor: Alysson Machado
-// Data: 27/07/2020
-// Horário: 16:16 PM
 // padrão de tabuleiro
 #include <iostream>
 
