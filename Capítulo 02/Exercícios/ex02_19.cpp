@@ -1,6 +1,4 @@
 // Exercício 2.19: ex02_19.cpp
-// Data: 20/07/2020
-// Horário: 15:13 PM
 // Programa de cálculos aritméticos
 #include <iostream>
 #include <locale.h>
