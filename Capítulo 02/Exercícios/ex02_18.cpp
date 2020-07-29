@@ -1,6 +1,4 @@
 // Exercício 2.18: ex02_18.cpp
-// Data: 20/07/2020
-// Horário: 15:57 PM
 // Maior de dois números
 #include <iostream>
 #include <locale>
