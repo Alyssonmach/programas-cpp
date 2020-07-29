@@ -1,7 +1,4 @@
 // Figura 2.5: fig02_05.cpp
-// Autor: Alysson Machado
-// Data: 16/07/2020
-// Horário: 10:29 AM
 // Programa de adição que exibe a soma de dois números
 #include <iostream> // Permite ao programa realizar entrada e saída
 
