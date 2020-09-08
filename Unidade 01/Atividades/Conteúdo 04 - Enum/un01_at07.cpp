@@ -18,9 +18,9 @@ int main(void)
 	cout << "Programa enumeração de disciplinas." << endl << endl;
 	
 	// Definindo uma enum
-	enum disciplinas {Equacoes_diferenciais = 1, Circuitos_logicos = 2, 
-	                  Lab_circuitos_logicos = 3, Tecnicas_de_programacao = 4,
-					  Mecanica_geral_i = 5};
+	enum disciplinas {Equacoes_diferenciais = 3, Circuitos_logicos = 4, 
+	                  Lab_circuitos_logicos = 2, Tecnicas_de_programacao = 4,
+					  Mecanica_geral_i = 3};
 
     // Imprime a enumeração das disciplinas
     cout << "Disciplinas 2020.3:" << endl;
