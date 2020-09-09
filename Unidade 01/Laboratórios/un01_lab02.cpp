@@ -1,4 +1,7 @@
-// Programa identificador de disciplinas - un01_lab02.cpp
+// Programa identificador de disciplinas usando enumeradores - un01_lab02.cpp
+
+// Aluno: Alysson Machado de Oliveira Barbosa
+// Unidade 01 - Laboratório de Programação 02
 
 // Importando a biblioteca padrão de entrada e saída de dados
 #include <iostream>
@@ -18,9 +21,9 @@ int main(void)
 	cout << "Programa enumeração de disciplinas." << endl << endl;
 	
 	// Definindo uma enum
-	enum disciplinas {Equacoes_diferenciais = 3, Circuitos_logicos = 4, 
-	                  Lab_circuitos_logicos = 2, Tecnicas_de_programacao = 4,
-					  Mecanica_geral_i = 3};
+	enum disciplinas {Equacoes_diferenciais = 12345, Circuitos_logicos = 23453, 
+	                  Lab_circuitos_logicos = 67823, Tecnicas_de_programacao = 19783,
+					  Mecanica_geral_i = 56783};
 
     // Imprime a enumeração de cada uma dasdas disciplinas
     cout << "Disciplinas 2020.3:" << endl;
