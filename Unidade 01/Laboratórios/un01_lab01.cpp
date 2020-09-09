@@ -1,5 +1,8 @@
 // Usando uma struct para definir a distância entre dois pontos - un01_lab01.cpp
 
+// Aluno: Alysson Machado de Oliveira Barbosa
+// Unidade 01 - Laboratório de Programação 01
+
 // Biblioteca padrão de entrada e saída de dados
 #include <iostream>
 // Biblioteca de localização de arquivos
