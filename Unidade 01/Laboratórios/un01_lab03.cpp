@@ -1,5 +1,8 @@
 // Programa de conversão de temperaturas - un01_lab03.cpp
 
+// Aluno: Alysson Machado de Oliveira Barbosa
+// Unidade 01 - Laboratório de Programação 03
+
 // Biblioteca padrão de entrada e saída de dados
 #include <iostream>
 // Biblioteca de localização de arquivos
