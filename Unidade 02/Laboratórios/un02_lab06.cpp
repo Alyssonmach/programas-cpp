@@ -10,6 +10,8 @@
 #include <string>
 // Biblioteca de manipulação de dados
 #include <iomanip>
+// Biblioteca para controle de processos
+#include <cstdlib>
 
 // Acessa as funções das bibliotecas padrão
 using namespace std;
@@ -35,6 +37,7 @@ class ContaBancaria
     	float getSaldo(void);
     	void saque(float);
     	void deposito(float);
+    	void menuATM(void);
 };
 
 // Definindo um construtor para a classe 
@@ -81,6 +84,109 @@ void ContaBancaria::deposito(float quantia)
 		setSaldo(saldo + quantia);
 }
 
+void ContaBancaria::menuATM(void)
+{
+	
+	string nome_usuario;
+	int conta_usuario, opcao;
+	float quantia;
+	
+	cout << "=== Banco Intermares ===" << endl << endl;
+	
+	cout << "Nome do usuário: ";
+	getline(cin, nome_usuario);
+	cout << "Número da conta: ";
+	cin >> conta_usuario;
+	
+	setNome(nome_usuario);
+	setConta(conta_usuario);
+	
+	system("pause");
+	system("cls");
+	
+	do
+	{
+		cout << "=== Banco Intermares ===" << endl << endl;
+		
+		cout << "Bem-vindo " << getNome() << "." << endl << endl;
+		cout << "Escolha uma operação: " << endl << endl;
+		cout << "1. Consulta ao saldo" << endl;
+		cout << "2. Realizar depósito na conta" << endl;
+		cout << "3. Realizar saque na conta" << endl;
+		cout << "0. Finalizar sessão" << endl << endl;
+		cout << "Escolha uma operação: ";
+		cin >> opcao;
+		
+		system("pause");
+		system("cls");
+		
+		if(opcao == 0)
+		{
+			cout << "=== Banco Intermares ===" << endl << endl;
+			
+			cout << "Operação Finalizada. Volte sempre " << getNome() << "." << endl;
+		}
+		else if(opcao == 1)
+		{
+			cout << "=== Banco Intermares ===" << endl << endl;
+			
+			cout << "Número da conta: " << getConta() << endl;
+			cout << "Saldo atual: " << getSaldo() << " R$" << endl;
+		}
+		else if(opcao == 2)
+		{
+			cout << "=== Banco Intermares ===" << endl << endl;
+			
+			cout << "Informe uma quantia a ser depositada na conta: ";
+			cin >> quantia;
+			
+			if(quantia >= 0)
+			{
+				cout << "Depósito realizado com sucesso." << endl;
+				deposito(quantia);
+			}
+			else
+			{
+				cout << "Depósito não autorizado." << endl;
+			}
+			
+			
+			cout << "Número da conta: " << getConta() << endl;
+			cout << "Saldo atual: " << getSaldo() << " R$" << endl;
+		}
+		else if(opcao == 3)
+		{
+			cout << "=== Banco Intermares ===" << endl << endl;
+			
+			cout << "Informe uma quantia a ser sacada da conta: ";
+			cin >> quantia;
+			
+			if(getSaldo() >= quantia && quantia >= 0)
+			{
+				saque(quantia);
+				cout << "Saque realizado com sucesso." << endl;
+			}
+			else
+			{
+				cout << "Saque não autorizado." << endl;
+			}
+			
+			cout << "Número da conta: " << getConta() << endl;
+			cout << "Saldo atual: " << getSaldo() << " R$" << endl;
+		}
+		else
+		{
+			cout << "=== Banco Intermares ===" << endl << endl;
+			
+			cout << "Entrada inválida. Tente novamente!" << endl;
+		}
+		
+		system("pause");
+		system("cls");
+		
+	}while(opcao != 0);
+}
+
 // Função principal do programa
 int main(void)
 {
@@ -88,34 +194,10 @@ int main(void)
 	
 	// Definindo instâncias ou objetos da classe
 	ContaBancaria pessoa1("Alysson Machado", 123456);
-	ContaBancaria pessoa2("Francinildo Figueiredo", 654321);
 	
 	cout << fixed << setprecision(2);
 	
-	// Obtendo os dados dos objetos da classe com as funções get
-	cout << "Nome do usuário 1: " << pessoa1.getNome() << endl;
-	cout << "Conta do usuário 1: " << pessoa1.getConta() << endl;
-	cout << "Saldo do usuário 1: " << pessoa1.getSaldo() << " R$" << endl << endl;
-	
-	cout << "Nome do usuário 2: " << pessoa2.getNome() << endl;
-	cout << "Conta do usuário 2: " << pessoa2.getConta() << endl;
-	cout << "Saldo do usuário 2: " << pessoa2.getSaldo() << " R$" << endl << endl;
-	
-	// Modificando membros de dados da classe através de funções membro
-	pessoa1.deposito(20.0);
-	pessoa2.deposito(30.0);
-	
-	// Obtendo os dados dos objetos da classe com as funções get
-	cout << "Saldo do usuário 1 depois do depósito: " << pessoa1.getSaldo() << " R$" << endl;
-	cout << "Saldo do usuário 2 depois do depósito: " << pessoa2.getSaldo() << " R$" << endl << endl;
-	
-	// Modificando membros de dados da classe através de funções membro
-	pessoa1.saque(50.0);
-	pessoa2.saque(10.0);
-	
-	// Obtendo os dados dos objetos da classe com as funções get
-	cout << "Saldo do usuário 1 depois do saque: " << pessoa1.getSaldo() << " R$" << endl;
-	cout << "Saldo do usuário 2 depois do saque: " << pessoa2.getSaldo() << " R$" << endl;
+	pessoa1.menuATM();
 	
 	return 0;
 }
