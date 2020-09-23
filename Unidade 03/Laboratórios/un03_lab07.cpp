@@ -28,7 +28,6 @@ class Televisao
     	void diminuiCanal(void);
     	void trocaCanal(int);
     	void saidaDados(void);
-    	void entradaDados(void);
 }; // Fim da classe televisão
 
 // Implementação do construtor da classe
@@ -37,6 +36,9 @@ Televisao::Televisao(void)
 	volume = 15;
 	canal = 0;
 }
+
+// Cabeçalho da função definida no programa
+void menu(class Televisao);
 
 // Implementação dos Métodos dos membros da classe
 
@@ -78,8 +80,21 @@ void Televisao::saidaDados(void)
 	cout << "Volume da televisão: " << volume << endl << endl;
 }
 
-// Membro responsável por obter os dados da televisão
-void Televisao::entradaDados(void)
+// Função principal do programa
+int main(void)
+{
+	setlocale(LC_ALL, "portuguese");
+	
+	// Instância ou objeto da função
+	Televisao controle;
+	
+	menu(controle);
+	
+	return 0;
+}
+
+// Função responsável por criar um menu para a classe
+void menu(Televisao controle)
 {
 	int opcao, canal_novo;
 	
@@ -87,7 +102,7 @@ void Televisao::entradaDados(void)
 	{
 		cout << "|=|=|=| Televisão XingLang Ultra Master Power Fusion 3.0 |=|=|=|" << endl << endl;
 		
-		saidaDados();
+		controle.saidaDados();
 		
 		cout << "1 -> Vol +" << endl;
 		cout << "2 -> Vol -" << endl;
@@ -100,25 +115,25 @@ void Televisao::entradaDados(void)
 		
 		if(opcao == 1)
 		{
-			aumentaVolume();
+			controle.aumentaVolume();
 		}
 		else if(opcao == 2)
 		{
-			diminuiVolume();
+			controle.diminuiVolume();
 		}
 		else if(opcao == 3)
 		{
-			aumentaCanal();
+			controle.aumentaCanal();
 		}
 		else if(opcao == 4)
 		{
-			diminuiCanal();
+			controle.diminuiCanal();
 		}
 		else if(opcao == 5)
 		{
 			cout << "Informe um canal: ";
 			cin >> canal_novo;
-			trocaCanal(canal_novo); 
+			controle.trocaCanal(canal_novo); 
 		}
 		else if(opcao == 6)
 		{
@@ -133,17 +148,4 @@ void Televisao::entradaDados(void)
 		system("cls");
 		
 	}while( opcao != 6);
-}
-
-// Função principal do programa
-int main(void)
-{
-	setlocale(LC_ALL, "portuguese");
-	
-	// Instância ou objeto da função
-	Televisao controle;
-	
-	controle.entradaDados();
-	
-	return 0;
 }

@@ -100,8 +100,8 @@ int Elevador::getAndarTotal(void)
 }
 
 // Cabeçalho das funções 
-void menu(Elevador);
-void mostraDados(Elevador);
+void menu(class Elevador);
+void mostraDados(class Elevador);
 
 // Função principal do programa
 int main(void)
