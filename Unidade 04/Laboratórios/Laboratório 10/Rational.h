@@ -22,6 +22,7 @@ class Rational
 		// Membros de funções da classe
 		void multiplicaRational(Rational, Rational);
 		void divideRational(Rational, Rational);
+		void setRational(int, int);
 		int getNumerador(void);
 		int getDenominador(void);
 }; // Fim da classe rational
