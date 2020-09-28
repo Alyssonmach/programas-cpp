@@ -54,6 +54,12 @@ void Rational::divideRational(Rational num1, Rational num2)
 	cout << "Em frações, teremos: " << numerador << "/" << denominador << endl << endl;
 }
 
+void Rational::setRational(int num, int den)
+{
+	numerador = num;
+	denominador = den;
+}
+
 // Retorna o numerador do objeto
 int Rational::getNumerador(void)
 {
