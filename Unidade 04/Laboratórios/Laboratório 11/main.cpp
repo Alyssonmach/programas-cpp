@@ -25,7 +25,22 @@ int main(void)
 	// Instância ou objeto da classe
 	Relogio meuRelogio;
 	
-	meuRelogio.setHora(23, 59, 45);
+	int h, m, s;
+	
+	cout << "Programa Meu Relógio Pessoal" << endl << endl;
+	
+	cout << "Insira a hora atual: ";
+	cin >> h;
+	
+	cout << "Insira o minuto atual: ";
+	cin >> m;
+	
+	cout << "Insira o segundo atual: ";
+	cin >> s;
+	
+	meuRelogio.setHora(h, m, s);
+	
+	system("cls");
 	
 	menuRelogio(meuRelogio);
 	
