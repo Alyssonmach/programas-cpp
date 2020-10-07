@@ -1,23 +1,44 @@
+// Implementando um programa que simula uma empresa - Funcionario.h
+
+// Aluno Alysson Machado de Oliveira Barbosa
+// Matrícula: 119110236
+// Técnicas de Programação (C++) - Salerno
+// Unidade 05 - Laboratório 14 
+
 #ifndef FUNCIONARIO_H
 #define FUNCIONARIO_H
 
-class Funcionario
+// Definindo uma struct DataAdmissao
+struct DataAdmissao
 {
-	public:
-		Funcionario(void);
-		Funcionario(string, float, int, int, int);
-		~Funcionario(void);
-		void setNome(string);
-		void setSalario(float);
-		void setAdmissao(int, int, int);
-		string getNome const;
-		float getSalario const;
-		void getAdmissao(int*, int*, int*) const;
-		
+	int dia;
+	int mes;
+	int ano;
+};
+
+// Definindo uma classe Funcionario
+class Funcionario 
+{	
+	// Modificador de acesso private
 	private:
+		// Membros de dados da classe
 		string nome;
 		float salario;
-		int dia, mes, ano;
+		DataAdmissao data;
+		string departamento;
+    // Modificador de acesso public
+    public:
+    	// Construtor da classe
+    	Funcionario(void);
+    	// Membros de funções da classe
+    	void setNome(string);
+    	void setSalario(float);
+    	void setData(int, int, int);
+    	void setDepartamento(string);
+    	string getNome(void) const;
+    	float getSalario(void) const;
+    	DataAdmissao getData(void) const;
+    	string getDepartamento(void) const;
 };
 
 #endif
