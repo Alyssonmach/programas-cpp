@@ -12,6 +12,7 @@
 |Aula 07 - Encapsulamento - POO|
 |Aula 08 - Static, Const, Objeto como Parâmetro|
 |Aula 09 - Encapsulamento - POO|
+|Aula 10 - Herança|
 
 ### Alguma Dúvida? Entre em Contato Comigo:
 - [Me envie um e-mail](mailto:alysson.barbosa@ee.ufcg.edu.br);
