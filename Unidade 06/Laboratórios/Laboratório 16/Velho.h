@@ -1,8 +1,17 @@
+// Implementação de um programa que simula o gerenciamento de imóveis - Velho.h
+
+// Aluno Alysson Machado de Oliveira Barbosa
+// Matrícula: 119110236
+// Técnicas de Programação (C++) - Salerno
+// Unidade 06 - Laboratório 16 
+// Ambiente de Desenvolvimento: Falcon C++
+
 #ifndef VELHO_H
 #define VELHO_H
 
 #include "Imovel.h"
 
+// Definindo a classe velho que herda da classe Imovel
 class Velho : public Imovel
 {
 	private:
