@@ -1,3 +1,11 @@
+// Implementação de um programa que simula o gerenciamento de imóveis - mainImovel.cpp
+
+// Aluno Alysson Machado de Oliveira Barbosa
+// Matrícula: 119110236
+// Técnicas de Programação (C++) - Salerno
+// Unidade 06 - Laboratório 16 
+// Ambiente de Desenvolvimento: Falcon C++
+
 #include <iostream>
 #include <locale>
 #include <iomanip>
@@ -10,6 +18,7 @@ using namespace std;
 #include "Novo.cpp"
 #include "Velho.cpp"
 
+// Definindo cabeçalhos de funções para impressão dos métodos das classes
 void ImovelNovo(class Novo);
 void ImovelVelho(class Velho);
 
@@ -23,6 +32,7 @@ int main(void)
 	
 	cout << fixed << setprecision(2);
 	
+	// Objetos ou instâncias das classes
 	Novo casa_nova(" ", 0, " ", " ", 0.0);
 	Velho casa_velha(" ", 0, " ", " ", 0.0);
 	
