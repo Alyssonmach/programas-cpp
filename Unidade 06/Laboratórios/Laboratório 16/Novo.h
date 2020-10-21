@@ -1,8 +1,17 @@
+// Implementação de um programa que simula o gerenciamento de imóveis - Novo.h
+
+// Aluno Alysson Machado de Oliveira Barbosa
+// Matrícula: 119110236
+// Técnicas de Programação (C++) - Salerno
+// Unidade 06 - Laboratório 16 
+// Ambiente de Desenvolvimento: Falcon C++
+
 #ifndef NOVO_H
 #define NOVO_H
 
 #include "Imovel.h"
 
+// Implementando a classe Novo que herda a classe base Imovel
 class Novo : public Imovel
 {
 	private:
