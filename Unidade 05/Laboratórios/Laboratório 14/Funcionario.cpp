@@ -1,9 +1,7 @@
 // Implementando um programa que simula uma empresa - Funcionario.cpp
 
-// Aluno Alysson Machado de Oliveira Barbosa
-// Matrícula: 119110236
-// Técnicas de Programação (C++) - Salerno
-// Unidade 05 - Laboratório 14 
+// Tï¿½cnicas de Programaï¿½ï¿½o (C++) - Salerno
+// Unidade 05 - Laboratï¿½rio 14 
 
 #include "Funcionario.h"
 
@@ -18,19 +16,19 @@ Funcionario::Funcionario(void)
  	this -> departamento = "";
 }
 
-// Método para configurar o nome do funcionário
+// Mï¿½todo para configurar o nome do funcionï¿½rio
 void Funcionario::setNome(string nome)
 {
 	this -> nome = nome;
 }
 
-// Método para configurar o salário do funcionário
+// Mï¿½todo para configurar o salï¿½rio do funcionï¿½rio
 void Funcionario::setSalario(float salario)
 {
 	this -> salario = salario;
 }
 
-// Método para configurar a data de admissão do funcionário
+// Mï¿½todo para configurar a data de admissï¿½o do funcionï¿½rio
 void Funcionario::setData(int dia, int mes, int ano)
 {
 	this -> data.dia = dia;
@@ -38,31 +36,31 @@ void Funcionario::setData(int dia, int mes, int ano)
 	this -> data.ano = ano;
 }
 
-// Método para configurar o departamento do funcionário
+// Mï¿½todo para configurar o departamento do funcionï¿½rio
 void Funcionario::setDepartamento(string departamento)
 {
 	this -> departamento = departamento;
 }
 
-// Método para obter o nome do funcionário
+// Mï¿½todo para obter o nome do funcionï¿½rio
 string Funcionario::getNome(void) const
 {
 	return nome;
 }
 
-// Método para obter o salário do funcionário
+// Mï¿½todo para obter o salï¿½rio do funcionï¿½rio
 float Funcionario::getSalario(void) const
 {
 	return salario;
 }
 
-// Método para obter a data de admissão do funcionário
+// Mï¿½todo para obter a data de admissï¿½o do funcionï¿½rio
 DataAdmissao Funcionario::getData(void) const
 {
 	return data;
 }
 
-// Método para obter o departamento do funcionário
+// Mï¿½todo para obter o departamento do funcionï¿½rio
 string Funcionario::getDepartamento(void) const
 {
 	return departamento;

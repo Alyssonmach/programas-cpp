@@ -1,9 +1,7 @@
 // Implementando um programa Cria e Ordena uma lista de nomes - mainLista.cpp
 
-// Aluno Alysson Machado de Oliveira Barbosa
-// Matrícula: 119110236
-// Técnicas de Programação (C++) - Salerno
-// Unidade 05 - Laboratório 15
+// Tï¿½cnicas de Programaï¿½ï¿½o (C++) - Salerno
+// Unidade 05 - Laboratï¿½rio 15
 
 #include <iostream>
 #include <locale>
@@ -12,15 +10,15 @@
 
 using namespace std;
 
-// Cabeçalho da biblioteca criada
+// Cabeï¿½alho da biblioteca criada
 #include "Lista.cpp"
 
-// Função principal do programa
+// Funï¿½ï¿½o principal do programa
 int main(void)
 {
 	setlocale(LC_ALL, "Portuguese");
 	
-	// Instâncias ou objetos da classe e struct
+	// Instï¿½ncias ou objetos da classe e struct
 	Lista minhaLista(100);
 	NomesFuncionarios insereNomes;
 	
@@ -29,14 +27,14 @@ int main(void)
 	do
 	{
 		
-		cout << "Programa de Adição de Nomes em Lista" << endl << endl;
+		cout << "Programa de Adiï¿½ï¿½o de Nomes em Lista" << endl << endl;
 		
 		cout << "1 - Inserir um novo nome na lista;" << endl;
 		cout << "2 - Ordenar alfabeticamente a lista;" << endl;
 		cout << "3 - Visualizar a lista de nomes;" << endl;
 		cout << "4 - Encerrar programa;" << endl << endl;
 		
-		cout << "Informe sua Opção: ";
+		cout << "Informe sua Opï¿½ï¿½o: ";
 		cin >> opcao;
 		
 		cout << endl;
@@ -66,11 +64,11 @@ int main(void)
 		}
 		else if(opcao == 4)
 		{
-			cout << "Sessão encerrada com sucesso!" << endl << endl;
+			cout << "Sessï¿½o encerrada com sucesso!" << endl << endl;
 		}
 		else
 		{
-			cout << "Entrada inválida! Por favor insira uma nova opção!" << endl;
+			cout << "Entrada invï¿½lida! Por favor insira uma nova opï¿½ï¿½o!" << endl;
 		}
 		
 		system("pause");

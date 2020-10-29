@@ -1,9 +1,7 @@
 // Implementando um programa que simula uma empresa - Empresa.cpp
 
-// Aluno Alysson Machado de Oliveira Barbosa
-// Matrícula: 119110236
-// Técnicas de Programação (C++) - Salerno
-// Unidade 05 - Laboratório 14 
+// Tï¿½cnicas de Programaï¿½ï¿½o (C++) - Salerno
+// Unidade 05 - Laboratï¿½rio 14 
 
 #include "Empresa.h"
 
@@ -15,13 +13,13 @@ Empresa::Empresa(int tam)
 	total = 0; 
 }
 
-// Método para configurar o nome da empresa
+// Mï¿½todo para configurar o nome da empresa
 void Empresa::setNome(string nome)
 {
 	this -> nome = nome;
 }
 
-// Método para cadastrar um novo funionário a empresa
+// Mï¿½todo para cadastrar um novo funionï¿½rio a empresa
 void Empresa::setEmpresa(Funcionario f)
 {
 	if (total < maxEmpresa)
@@ -31,13 +29,13 @@ void Empresa::setEmpresa(Funcionario f)
 	}
 }
 
-// Método para cadastrar o CNPJ da empresa
+// Mï¿½todo para cadastrar o CNPJ da empresa
 void Empresa::setCNPJ(long int cnpj)
 {
 	this -> CNPJ = cnpj;
 }
 
-// Método para realizar um aumento de 10% aos funcionários de um determinado dep.
+// Mï¿½todo para realizar um aumento de 10% aos funcionï¿½rios de um determinado dep.
 void Empresa::aumentoDepartamento(string dp)
 {
 	for(int i = 0; i < total; i++)
@@ -49,19 +47,19 @@ void Empresa::aumentoDepartamento(string dp)
 	}
 }
 
-// Método para obter o nome da empresa
+// Mï¿½todo para obter o nome da empresa
 string Empresa::getNome(void) const
 {
 	return nome;
 }
 
-// Método para obter o CNPJ da empresa
+// Mï¿½todo para obter o CNPJ da empresa
 long int Empresa::getCNPJ(void) const
 {
 	return CNPJ;
 }
 
-// Método para imprimir os dados cadastrados na empresa
+// Mï¿½todo para imprimir os dados cadastrados na empresa
 void Empresa::imprimeEmpresa(void) const
 {
 	cout << "Nome da Empresa: " << nome << endl;
@@ -75,7 +73,7 @@ void Empresa::imprimeEmpresa(void) const
 		DataAdmissao aux = ptr[i].getData();
 		
 		cout << setfill('0');
-		cout << "Data de Admissão: " << setw(2) <<aux.dia << "/";
+		cout << "Data de Admissï¿½o: " << setw(2) <<aux.dia << "/";
 		cout << setw(2) << aux.mes << "/";
 		cout << setw(4) << aux.ano << endl;
 		

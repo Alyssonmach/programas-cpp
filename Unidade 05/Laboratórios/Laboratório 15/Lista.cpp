@@ -1,9 +1,7 @@
 // Implementando um programa Cria e Ordena uma lista de nomes - Lista.cpp
 
-// Aluno Alysson Machado de Oliveira Barbosa
-// Matrícula: 119110236
-// Técnicas de Programação (C++) - Salerno
-// Unidade 05 - Laboratório 15
+// Tï¿½cnicas de Programaï¿½ï¿½o (C++) - Salerno
+// Unidade 05 - Laboratï¿½rio 15
 
 #include "Lista.h"
 
@@ -25,7 +23,7 @@ void Lista::setLista(NomesFuncionarios nomes)
 	}
 }
 
-// Ordenando a lista de nomes em ordem alfabética (Ordenação Bolha + métodos da classe string)
+// Ordenando a lista de nomes em ordem alfabï¿½tica (Ordenaï¿½ï¿½o Bolha + mï¿½todos da classe string)
 void Lista::OrdenaAlfabetica(void)
 {
 	string aux;
@@ -40,7 +38,7 @@ void Lista::OrdenaAlfabetica(void)
 			}
 }
 
-// Método responsável por imprimir a lista de nomes para o usuário
+// Mï¿½todo responsï¿½vel por imprimir a lista de nomes para o usuï¿½rio
 void Lista::imprimeLista(void)
 {
 	for(int i = 0; i < total; i++)

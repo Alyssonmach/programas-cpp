@@ -1,9 +1,7 @@
-// Implementando um programa que simula uma conta de poupança - mainContaDePoupanca.cpp
+// Implementando um programa que simula uma conta de poupanï¿½a - mainContaDePoupanca.cpp
 
-// Aluno Alysson Machado de Oliveira Barbosa
-// Matrícula: 119110236
-// Técnicas de Programação (C++) - Salerno
-// Unidade 05 - Laboratório 13 
+// Tï¿½cnicas de Programaï¿½ï¿½o (C++) - Salerno
+// Unidade 05 - Laboratï¿½rio 13 
 
 #include <iostream>
 #include <locale>
@@ -13,11 +11,11 @@
 
 using namespace std;
 
-// Cabeçalho para a função menu
+// Cabeï¿½alho para a funï¿½ï¿½o menu
 void menu(class ContaDePoupanca);
 
 
-// Função principal do programa
+// Funï¿½ï¿½o principal do programa
 int main(void)
 {
 	setlocale(LC_ALL, "Portuguese");
@@ -32,7 +30,7 @@ int main(void)
 	return 0;
 }
 
-// Função que exibe um menu interativo para a classe ContaDePoupanca
+// Funï¿½ï¿½o que exibe um menu interativo para a classe ContaDePoupanca
 void menu(class ContaDePoupanca manipula_conta)
 {
 	int opcao;
@@ -40,16 +38,16 @@ void menu(class ContaDePoupanca manipula_conta)
 	
 	do
 	{
-		cout << "=== Programa que simula uma poupança bancária ===" << endl << endl;
+		cout << "=== Programa que simula uma poupanï¿½a bancï¿½ria ===" << endl << endl;
 		
-		cout << "Digite uma das opções abaixo: " << endl << endl;
+		cout << "Digite uma das opï¿½ï¿½es abaixo: " << endl << endl;
 		cout << "1 - Obter o saldo atual da conta" << endl;
 		cout << "2 - Obter a taxa de juros anual" << endl;
-		cout << "3 - Obter o rendimento do próximo mês" << endl;
+		cout << "3 - Obter o rendimento do prï¿½ximo mï¿½s" << endl;
 		cout << "4 - Configurar o saldo da conta" << endl;
 		cout << "5 - Encerrar processos no caixa" << endl << endl;
 		
-		cout << "Digite sua opção: ";
+		cout << "Digite sua opï¿½ï¿½o: ";
 		cin >> opcao;
 		
 		cout << endl;
@@ -69,7 +67,7 @@ void menu(class ContaDePoupanca manipula_conta)
 		}
 		else if(opcao == 3)
 		{
-			cout << "Rendimento do próximo mês: ";
+			cout << "Rendimento do prï¿½ximo mï¿½s: ";
 			manipula_conta.calculeRendimentoMensal();
 			cout << " R$" << endl << endl;
 		}

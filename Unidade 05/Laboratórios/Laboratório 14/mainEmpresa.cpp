@@ -1,9 +1,7 @@
 // Implementando um programa que simula uma empresa - mainEmpresa.cpp
 
-// Aluno Alysson Machado de Oliveira Barbosa
-// Matrícula: 119110236
-// Técnicas de Programação (C++) - Salerno
-// Unidade 05 - Laboratório 14 
+// Tï¿½cnicas de Programaï¿½ï¿½o (C++) - Salerno
+// Unidade 05 - Laboratï¿½rio 14 
 
 #include <iostream>
 #include <locale>
@@ -13,18 +11,18 @@
 
 using namespace std;
 
-// Incluindo o cabeçalho das bibliotecas criadas
+// Incluindo o cabeï¿½alho das bibliotecas criadas
 #include "Funcionario.cpp"
 #include "Empresa.cpp"
 
 #define TAM 100
  
-// Função principal do programa
+// Funï¿½ï¿½o principal do programa
 int main(void)
 {
 	setlocale(LC_ALL, "Portuguese");
 	
-	// Instância ou objetos das classes
+	// Instï¿½ncia ou objetos das classes
 	Empresa emp(TAM);
 	Funcionario func;
 	
@@ -54,13 +52,13 @@ int main(void)
 	do
 	{
 		
-		cout << "Escolha uma opção:" << endl << endl;
-		cout << "1 - Cadastrar um funcionário a empresa;" << endl;
+		cout << "Escolha uma opï¿½ï¿½o:" << endl << endl;
+		cout << "1 - Cadastrar um funcionï¿½rio a empresa;" << endl;
 		cout << "2 - Dar um aumento aos empregados de um determinado departamento;" << endl;
 		cout << "3 - Visualizar dados da empresa;" << endl;
 		cout << "4 - Sair do programa;" << endl << endl;
 		
-		cout << "Insira sua opção: ";
+		cout << "Insira sua opï¿½ï¿½o: ";
 		cin >> opcao;
 		
 		cout << endl;
@@ -76,19 +74,19 @@ int main(void)
 			
 			cin.ignore();
 			
-			cout << "Nome do novo funcionário:";
+			cout << "Nome do novo funcionï¿½rio:";
 			getline(cin, nome);
 			
-			cout << "Salario inicial do funcionário: ";
+			cout << "Salario inicial do funcionï¿½rio: ";
 			cin >> salario;
 			
-			cout << "Dia da Admissão: ";
+			cout << "Dia da Admissï¿½o: ";
 			cin >> dia;
 			
-			cout << "Mês de Admissão: ";
+			cout << "Mï¿½s de Admissï¿½o: ";
 			cin >> mes;
 			
-			cout << "Ano de Admissão: ";
+			cout << "Ano de Admissï¿½o: ";
 			cin >> ano;
 			
 			cin.ignore();
@@ -105,8 +103,8 @@ int main(void)
 			
 			limite++;
 			
-			cout << endl << "Usuário cadastrado com sucesso!" << endl << endl;
-			cout << "Limite de Funcionários: " << limite << "/" << TAM << endl;
+			cout << endl << "Usuï¿½rio cadastrado com sucesso!" << endl << endl;
+			cout << "Limite de Funcionï¿½rios: " << limite << "/" << TAM << endl;
 		}
 		else if(opcao == 2)
 		{
@@ -130,7 +128,7 @@ int main(void)
 		}
 		else
 		{
-			cout << "Entrada Inválida! Tente novamente." << endl;
+			cout << "Entrada Invï¿½lida! Tente novamente." << endl;
 		}
 		
 		system("pause");

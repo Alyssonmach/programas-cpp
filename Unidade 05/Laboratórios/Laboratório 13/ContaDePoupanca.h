@@ -1,9 +1,7 @@
-// Implementando um programa que simula uma conta de poupança - ContaDePoupanca.h
+// Implementando um programa que simula uma conta de poupanï¿½a - ContaDePoupanca.h
 
-// Aluno Alysson Machado de Oliveira Barbosa
-// Matrícula: 119110236
-// Técnicas de Programação (C++) - Salerno
-// Unidade 05 - Laboratório 13 
+// Tï¿½cnicas de Programaï¿½ï¿½o (C++) - Salerno
+// Unidade 05 - Laboratï¿½rio 13 
 
 #ifndef CONTADEPOUPANCA_H
 #define CONTADEPOUPANCA_H
@@ -15,7 +13,7 @@ class ContaDePoupanca
 	public:
 		ContaDePoupanca(void);
 		ContaDePoupanca(float);
-		 // Membro de funções da classe
+		 // Membro de funï¿½ï¿½es da classe
 		 void calculeRendimentoMensal(void);
 		 static void modifiqueTaxaDeJurosAnual(float taxa)
 		 {

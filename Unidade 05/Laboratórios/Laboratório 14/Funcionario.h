@@ -1,9 +1,7 @@
 // Implementando um programa que simula uma empresa - Funcionario.h
 
-// Aluno Alysson Machado de Oliveira Barbosa
-// Matrícula: 119110236
-// Técnicas de Programação (C++) - Salerno
-// Unidade 05 - Laboratório 14 
+// Tï¿½cnicas de Programaï¿½ï¿½o (C++) - Salerno
+// Unidade 05 - Laboratï¿½rio 14 
 
 #ifndef FUNCIONARIO_H
 #define FUNCIONARIO_H
@@ -30,7 +28,7 @@ class Funcionario
     public:
     	// Construtor da classe
     	Funcionario(void);
-    	// Membros de funções da classe
+    	// Membros de funï¿½ï¿½es da classe
     	void setNome(string);
     	void setSalario(float);
     	void setData(int, int, int);

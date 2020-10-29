@@ -1,43 +1,41 @@
-// Implementando um programa que simula uma conta de poupança - ContaDePoupanca.cpp
+// Implementando um programa que simula uma conta de poupanï¿½a - ContaDePoupanca.cpp
 
-// Aluno Alysson Machado de Oliveira Barbosa
-// Matrícula: 119110236
-// Técnicas de Programação (C++) - Salerno
-// Unidade 05 - Laboratório 13 
+// Tï¿½cnicas de Programaï¿½ï¿½o (C++) - Salerno
+// Unidade 05 - Laboratï¿½rio 13 
 
-// Incluindo o arquivo de cabeçalho do programa
+// Incluindo o arquivo de cabeï¿½alho do programa
 #include "ContaDePoupanca.h"
 #include <iostream>
 
 using std::cout;
 using std::endl;
 
-// Implementando o construtor sem parâmetros para a classe
+// Implementando o construtor sem parï¿½metros para a classe
 ContaDePoupanca::ContaDePoupanca(void)
 {
 	saldoDaPoupanca = 0;
 }
 
-// Implementando o construtor com parâmetros para a classe
+// Implementando o construtor com parï¿½metros para a classe
 ContaDePoupanca::ContaDePoupanca(float saldo)
 {
 	setSaldoDaPoupanca(saldo);
 }
 
-// Implementando um método da classe responsável por calcular o rendimento mensal do cliente
+// Implementando um mï¿½todo da classe responsï¿½vel por calcular o rendimento mensal do cliente
 void ContaDePoupanca::calculeRendimentoMensal(void)
 {
 	cout << "Rendimento Mensal: " << (saldoDaPoupanca * taxaDeJurosAnual) / 12 << " R$" << endl;
 	saldoDaPoupanca += ((saldoDaPoupanca * taxaDeJurosAnual) / 12);
 }
 
-// Implementando um método da classe que configura o saldo inicial do usuário
+// Implementando um mï¿½todo da classe que configura o saldo inicial do usuï¿½rio
 void ContaDePoupanca::setSaldoDaPoupanca(float saldo)
 {
 	saldoDaPoupanca = (saldo >= 0) ? saldo : saldoDaPoupanca;
 }
 
-// Implementando um método responsável por obter a poupança do usuário 
+// Implementando um mï¿½todo responsï¿½vel por obter a poupanï¿½a do usuï¿½rio 
 float ContaDePoupanca::getSaldoDaPoupanca(void) const
 {
 	return this -> saldoDaPoupanca;

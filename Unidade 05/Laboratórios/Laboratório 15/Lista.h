@@ -1,9 +1,7 @@
 // Implementando um programa Cria e Ordena uma lista de nomes - Lista.h
 
-// Aluno Alysson Machado de Oliveira Barbosa
-// Matrícula: 119110236
-// Técnicas de Programação (C++) - Salerno
-// Unidade 05 - Laboratório 15
+// Tï¿½cnicas de Programaï¿½ï¿½o (C++) - Salerno
+// Unidade 05 - Laboratï¿½rio 15
 
 #ifndef LISTA_H
 #define LISTA_H
@@ -27,7 +25,7 @@ class Lista
     public:
     	// Definindo um construtor para a classe
     	Lista(int);
-    	// Membros de funções da classe
+    	// Membros de funï¿½ï¿½es da classe
     	void setLista(NomesFuncionarios);
     	void OrdenaAlfabetica(void);
     	void imprimeLista(void);

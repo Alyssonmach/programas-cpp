@@ -1,9 +1,7 @@
 // Implementando um programa que simula uma empresa - Empresa.h
 
-// Aluno Alysson Machado de Oliveira Barbosa
-// Matrícula: 119110236
-// Técnicas de Programação (C++) - Salerno
-// Unidade 05 - Laboratório 14 
+// Tï¿½cnicas de Programaï¿½ï¿½o (C++) - Salerno
+// Unidade 05 - Laboratï¿½rio 14 
 
 #ifndef EMRPESA_H
 #define EMPRESA_H
@@ -23,7 +21,7 @@ class Empresa
     public:
     	// Construtor da classe
     	Empresa(int);
-    	// Membros de funções da classe
+    	// Membros de funï¿½ï¿½es da classe
     	void setNome(string);
     	void setEmpresa(Funcionario);
     	void setCNPJ(long int);
