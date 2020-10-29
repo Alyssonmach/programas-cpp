@@ -1,15 +1,13 @@
-// Programa que calcula as propriedades de um retângulo - un02_lab01.cpp
-// Aluno: Alysson Machado de Oliveira Barbosa
-// Matrícula: 119110236
+// Programa que calcula as propriedades de um retï¿½ngulo - un02_lab01.cpp
 
-// Biblioteca responsável pelo fluxo de entrada e saída de dados
+// Biblioteca responsï¿½vel pelo fluxo de entrada e saï¿½da de dados
 #include <iostream>
-// Biblioteca responsável por localização de arquivos
+// Biblioteca responsï¿½vel por localizaï¿½ï¿½o de arquivos
 #include <locale>
-// Biblioteca para relizar operações numéricas
+// Biblioteca para relizar operaï¿½ï¿½es numï¿½ricas
 #include <cmath>
 
-// Acessa as funções das bibliotecas padrão
+// Acessa as funï¿½ï¿½es das bibliotecas padrï¿½o
 using namespace std;
 
 // Definindo uma classe Retangulo
@@ -18,19 +16,19 @@ class Retangulo{
 	// Modificador de acesso private
 	private:
 		int pix,piy,psx, psy; // Membro de Dados da Classe
-		bool checar(int,int,int,int); // Membro de Função da Classe
+		bool checar(int,int,int,int); // Membro de Funï¿½ï¿½o da Classe
     // Modificador de acesso public
 	public:
-		void setValores(int, int, int, int); // Membro de Função da Classe
-		int comprimento(void); // Membro de Função da Classe
-		int largura(void); // Membro de Função da Classe
-		int perimetro(void); // Membro de Função da Classe
-		int area(void); // Membro de Função da Classe
-		bool ehquadrado(void); // Membro de Função da Classe
-		void imprimeDados(void); // Membro de Função da Classe
+		void setValores(int, int, int, int); // Membro de Funï¿½ï¿½o da Classe
+		int comprimento(void); // Membro de Funï¿½ï¿½o da Classe
+		int largura(void); // Membro de Funï¿½ï¿½o da Classe
+		int perimetro(void); // Membro de Funï¿½ï¿½o da Classe
+		int area(void); // Membro de Funï¿½ï¿½o da Classe
+		bool ehquadrado(void); // Membro de Funï¿½ï¿½o da Classe
+		void imprimeDados(void); // Membro de Funï¿½ï¿½o da Classe
 };
 
-// Implementação dos métodos da classe
+// Implementaï¿½ï¿½o dos mï¿½todos da classe
 bool Retangulo::checar(int x1, int y1, int x2, int y2)
 {
 	if(x1 < 0 || y1 < 0 || x2 < 0 || y2 < 0)
@@ -40,7 +38,7 @@ bool Retangulo::checar(int x1, int y1, int x2, int y2)
 	else
 		return true;
 }
-// Implementação dos métodos da classe
+// Implementaï¿½ï¿½o dos mï¿½todos da classe
 void Retangulo::setValores(int x1, int y1, int x2, int y2)
 {
 	pix = x1;
@@ -48,7 +46,7 @@ void Retangulo::setValores(int x1, int y1, int x2, int y2)
 	psx = x2;
 	psy = y2;
 }
-// Implementação dos métodos da classe
+// Implementaï¿½ï¿½o dos mï¿½todos da classe
 int Retangulo::comprimento(void)
 {
 	if(fabs(psx - pix) >= fabs(psy - piy))
@@ -56,7 +54,7 @@ int Retangulo::comprimento(void)
 	else
 		return fabs(psy - piy);
 }
-// Implementação dos métodos da classe
+// Implementaï¿½ï¿½o dos mï¿½todos da classe
 int Retangulo::largura(void)
 {
 	if(fabs(psx - pix) <= fabs(psy - piy))
@@ -64,17 +62,17 @@ int Retangulo::largura(void)
 	else
 		return fabs(psy - piy);
 }
-// Implementação dos métodos da classe
+// Implementaï¿½ï¿½o dos mï¿½todos da classe
 int Retangulo::perimetro(void)
 {
 	return 2* fabs(psx - pix) + 2 * fabs(psy - piy);
 }
-// Implementação dos métodos da classe
+// Implementaï¿½ï¿½o dos mï¿½todos da classe
 int Retangulo::area(void)
 {
 	return fabs(psx - pix) * fabs(psy - piy);
 }
-// Implementação dos métodos da classe
+// Implementaï¿½ï¿½o dos mï¿½todos da classe
 bool Retangulo::ehquadrado(void)
 {
 	if(fabs(psx - pix) == fabs(psy - piy))
@@ -82,46 +80,46 @@ bool Retangulo::ehquadrado(void)
 	else
 		return false;
 }
-// Implementação dos métodos da classe
+// Implementaï¿½ï¿½o dos mï¿½todos da classe
 void Retangulo::imprimeDados(void)
 {
-	cout << "O comprimento do retângulo é: " << comprimento() << " u.c." << endl;
-	cout << "A largura do retângulo é: " << largura() << " u.l." << endl;
-	cout << "O perímetro do retângulo é: " << perimetro() << " u.p." << endl;
-	cout << "A área do retângulo é: " << area() << " u.a." << endl;
+	cout << "O comprimento do retï¿½ngulo ï¿½: " << comprimento() << " u.c." << endl;
+	cout << "A largura do retï¿½ngulo ï¿½: " << largura() << " u.l." << endl;
+	cout << "O perï¿½metro do retï¿½ngulo ï¿½: " << perimetro() << " u.p." << endl;
+	cout << "A ï¿½rea do retï¿½ngulo ï¿½: " << area() << " u.a." << endl;
 	
 	if(ehquadrado())
-		cout << "O objeto é um quadrado." << endl;
+		cout << "O objeto ï¿½ um quadrado." << endl;
 	else
-		cout << "O objeto é um retângulo." << endl;
+		cout << "O objeto ï¿½ um retï¿½ngulo." << endl;
 	
 	if(checar(pix, piy, psx, psy))
-		cout << "O objeto está no primeiro quadrante e possui lados menores que 15 u.c." << endl;
+		cout << "O objeto estï¿½ no primeiro quadrante e possui lados menores que 15 u.c." << endl;
 	else 
-		cout << "O objeto não está no primeiro quadrante ou não possui lados menores que 15 u.c." << endl;
+		cout << "O objeto nï¿½o estï¿½ no primeiro quadrante ou nï¿½o possui lados menores que 15 u.c." << endl;
 }
 
-// Função principal do programa
+// Funï¿½ï¿½o principal do programa
 int main(void)
 {
 	// Configurando o idioma brasileiro
 	setlocale(LC_ALL, "portuguese");
 	
-	// Instância ou objeto da classe
+	// Instï¿½ncia ou objeto da classe
 	Retangulo ret1;
 	
 	int x1, y1, x2, y2;
 	
-	cout << "Programa Calculadora de retângulos." << endl << endl;
+	cout << "Programa Calculadora de retï¿½ngulos." << endl << endl;
 	
-	cout << "Insira a coordenada x do primeiro vêrtice do triângulo: ";
+	cout << "Insira a coordenada x do primeiro vï¿½rtice do triï¿½ngulo: ";
 	cin >> x1;
-	cout << "Insira a coordenada y do primeiro vêrtice do triângulo: ";
+	cout << "Insira a coordenada y do primeiro vï¿½rtice do triï¿½ngulo: ";
 	cin >> y1;
 	
-	cout << "Insira a coordenada x do segundo vêrtice do triângulo: ";
+	cout << "Insira a coordenada x do segundo vï¿½rtice do triï¿½ngulo: ";
 	cin >> x2;
-	cout << "Insira a coordenada y do segundo vêrtice do triângulo: ";
+	cout << "Insira a coordenada y do segundo vï¿½rtice do triï¿½ngulo: ";
 	cin >> y2;
 	
 	ret1.setValores(x1, y1, x2, y2);
@@ -132,4 +130,4 @@ int main(void)
 	
 	// Indica que o programa terminou com sucesso
 	return 0;
-} // Fim da função principal
+} // Fim da funï¿½ï¿½o principal

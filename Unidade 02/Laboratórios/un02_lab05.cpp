@@ -1,17 +1,15 @@
 // Programa cadastrastramento de pessoas com IMC - un02_lab02.cpp
-// Aluno: Alysson Machado de Oliveira Barbosa
-// Matrícula: 119110236
 
-// Biblioteca padrão de entrada e saída de dados
+// Biblioteca padrï¿½o de entrada e saï¿½da de dados
 #include <iostream>
-// Biblioteca para localização de arquivos
+// Biblioteca para localizaï¿½ï¿½o de arquivos
 #include <locale>
-// Biblioteca para manipulação de cadeias de caracteres
+// Biblioteca para manipulaï¿½ï¿½o de cadeias de caracteres
 #include <string>
-// Biblioteca para realizar operações matemáticas
+// Biblioteca para realizar operaï¿½ï¿½es matemï¿½ticas
 #include <cmath>
 
-// Acessa as funções padrão das bibliotecas
+// Acessa as funï¿½ï¿½es padrï¿½o das bibliotecas
 using namespace std;
 
 // Definindo uma classe Pessoa
@@ -24,20 +22,20 @@ class Pessoa
 		int idade; // Membro de dados da classe
 		float altura; // Membro de dados da classe
 		float peso; // Membro de dados da classe
-		float calculaIMC(void); // Membro de função da classe
+		float calculaIMC(void); // Membro de funï¿½ï¿½o da classe
     // Modificador de acesso public
     public:
-    	void setValores(string, string, int, float, float); // Membro de função da classe
-    	string getNome(void); // Membro de função da classe
-    	string getSexo(void); // Membro de função da classe
-    	int getIdade(void); // Membro de função da classe
-    	float getAltura(void); // Membro de função da classe
-    	float getPeso(void); // Membro de função da classe
-    	void getIMC(void); // Membro de função da classe
-    	void getDados(void); // Membro de função da classe
+    	void setValores(string, string, int, float, float); // Membro de funï¿½ï¿½o da classe
+    	string getNome(void); // Membro de funï¿½ï¿½o da classe
+    	string getSexo(void); // Membro de funï¿½ï¿½o da classe
+    	int getIdade(void); // Membro de funï¿½ï¿½o da classe
+    	float getAltura(void); // Membro de funï¿½ï¿½o da classe
+    	float getPeso(void); // Membro de funï¿½ï¿½o da classe
+    	void getIMC(void); // Membro de funï¿½ï¿½o da classe
+    	void getDados(void); // Membro de funï¿½ï¿½o da classe
 }; // Fim da classe Pessoa
 
-// Implementação dos métodos da classe
+// Implementaï¿½ï¿½o dos mï¿½todos da classe
 void Pessoa::setValores(string nome_pessoa, string sexo_pessoa, int idade_pessoa, float altura_pessoa, float peso_pessoa)
 {
 	nome = nome_pessoa;
@@ -47,38 +45,38 @@ void Pessoa::setValores(string nome_pessoa, string sexo_pessoa, int idade_pessoa
 	peso = peso_pessoa;
 }
 
-// Implementação dos métodos da classe
+// Implementaï¿½ï¿½o dos mï¿½todos da classe
 float Pessoa::calculaIMC(void)
 {
 	return (peso / pow(altura, 2));
 }
 
-// Implementação dos métodos da classe
+// Implementaï¿½ï¿½o dos mï¿½todos da classe
 string Pessoa::getNome(void)
 {
 	return nome;
 }
-// Implementação dos métodos da classe
+// Implementaï¿½ï¿½o dos mï¿½todos da classe
 string Pessoa::getSexo(void)
 {
 	return sexo;
 }
-// Implementação dos métodos da classe
+// Implementaï¿½ï¿½o dos mï¿½todos da classe
 int Pessoa::getIdade(void)
 {
 	return idade;
 } 
-// Implementação dos métodos da classe
+// Implementaï¿½ï¿½o dos mï¿½todos da classe
 float Pessoa::getAltura(void)
 {
 	return altura;
 }
-// Implementação dos métodos da classe
+// Implementaï¿½ï¿½o dos mï¿½todos da classe
 float Pessoa::getPeso(void)
 {
 	return peso;
 }
-// Implementação dos métodos da classe
+// Implementaï¿½ï¿½o dos mï¿½todos da classe
 void Pessoa::getIMC(void)
 {
 	if(calculaIMC() <= 18.5)
@@ -98,7 +96,7 @@ void Pessoa::getIMC(void)
 		cout << "Obesidade" << endl;
 	}
 }
-// Implementação dos métodos da classe
+// Implementaï¿½ï¿½o dos mï¿½todos da classe
 void Pessoa::getDados(void)
 {
 	cout << "Nome: " << getNome() << endl;
@@ -109,13 +107,13 @@ void Pessoa::getDados(void)
 	getIMC();
 }
 
-// Função principal do programa
+// Funï¿½ï¿½o principal do programa
 int main(void)
 {
 	// COnfigurando o idioma brasileiro
 	setlocale(LC_ALL, "portuguese");
 	
-	// Definindo uma instância ou objeto da classe
+	// Definindo uma instï¿½ncia ou objeto da classe
 	Pessoa pessoa1;
 	
 	string nome, sexo;

@@ -1,19 +1,17 @@
 // Programa que simula um caixa ATM - un02_lab06.cpp
-// Aluno: Alysson Machado de Oliveira Barbosa
-// Matrícula: 119110236
 
-// Biblioteca padrão de entrada e saída de dados
+// Biblioteca padrï¿½o de entrada e saï¿½da de dados
 #include <iostream>
-// Biblioteca  de localização de arquivos
+// Biblioteca  de localizaï¿½ï¿½o de arquivos
 #include <locale>
-// Biblioteca de manipulação com cadeias de caracteres
+// Biblioteca de manipulaï¿½ï¿½o com cadeias de caracteres
 #include <string>
-// Biblioteca de manipulação de dados
+// Biblioteca de manipulaï¿½ï¿½o de dados
 #include <iomanip>
 // Biblioteca para controle de processos
 #include <cstdlib>
 
-// Acessa as funções das bibliotecas padrão
+// Acessa as funï¿½ï¿½es das bibliotecas padrï¿½o
 using namespace std;
 
 // Definindo uma classe ContaBancaria
@@ -27,7 +25,7 @@ class ContaBancaria
 		float saldo; 
 	// Modificador de acesso public	
     public:
-    	// Membro de Funções da classe
+    	// Membro de Funï¿½ï¿½es da classe
     	ContaBancaria(string, int); 
     	void setNome(string); 
     	void setConta(int); 
@@ -48,7 +46,7 @@ ContaBancaria::ContaBancaria(string nome_pessoal, int conta_bancaria)
 	saldo = 0.0;
 }
 
-// Implementação dos métodos da classe
+// Implementaï¿½ï¿½o dos mï¿½todos da classe
 void ContaBancaria::setNome(string nome_pessoal)
 {
 	nome = nome_pessoal;
@@ -93,9 +91,9 @@ void ContaBancaria::menuATM(void)
 	
 	cout << "=== Banco Intermares ===" << endl << endl;
 	
-	cout << "Nome do usuário: ";
+	cout << "Nome do usuï¿½rio: ";
 	getline(cin, nome_usuario);
-	cout << "Número da conta: ";
+	cout << "Nï¿½mero da conta: ";
 	cin >> conta_usuario;
 	
 	setNome(nome_usuario);
@@ -109,12 +107,12 @@ void ContaBancaria::menuATM(void)
 		cout << "=== Banco Intermares ===" << endl << endl;
 		
 		cout << "Bem-vindo " << getNome() << "." << endl << endl;
-		cout << "Escolha uma operação: " << endl << endl;
+		cout << "Escolha uma operaï¿½ï¿½o: " << endl << endl;
 		cout << "1. Consulta ao saldo" << endl;
-		cout << "2. Realizar depósito na conta" << endl;
+		cout << "2. Realizar depï¿½sito na conta" << endl;
 		cout << "3. Realizar saque na conta" << endl;
-		cout << "0. Finalizar sessão" << endl << endl;
-		cout << "Escolha uma operação: ";
+		cout << "0. Finalizar sessï¿½o" << endl << endl;
+		cout << "Escolha uma operaï¿½ï¿½o: ";
 		cin >> opcao;
 		
 		system("pause");
@@ -124,13 +122,13 @@ void ContaBancaria::menuATM(void)
 		{
 			cout << "=== Banco Intermares ===" << endl << endl;
 			
-			cout << "Operação Finalizada. Volte sempre " << getNome() << "." << endl;
+			cout << "Operaï¿½ï¿½o Finalizada. Volte sempre " << getNome() << "." << endl;
 		}
 		else if(opcao == 1)
 		{
 			cout << "=== Banco Intermares ===" << endl << endl;
 			
-			cout << "Número da conta: " << getConta() << endl;
+			cout << "Nï¿½mero da conta: " << getConta() << endl;
 			cout << "Saldo atual: " << getSaldo() << " R$" << endl;
 		}
 		else if(opcao == 2)
@@ -142,16 +140,16 @@ void ContaBancaria::menuATM(void)
 			
 			if(quantia >= 0)
 			{
-				cout << "Depósito realizado com sucesso." << endl;
+				cout << "Depï¿½sito realizado com sucesso." << endl;
 				deposito(quantia);
 			}
 			else
 			{
-				cout << "Depósito não autorizado." << endl;
+				cout << "Depï¿½sito nï¿½o autorizado." << endl;
 			}
 			
 			
-			cout << "Número da conta: " << getConta() << endl;
+			cout << "Nï¿½mero da conta: " << getConta() << endl;
 			cout << "Saldo atual: " << getSaldo() << " R$" << endl;
 		}
 		else if(opcao == 3)
@@ -168,17 +166,17 @@ void ContaBancaria::menuATM(void)
 			}
 			else
 			{
-				cout << "Saque não autorizado." << endl;
+				cout << "Saque nï¿½o autorizado." << endl;
 			}
 			
-			cout << "Número da conta: " << getConta() << endl;
+			cout << "Nï¿½mero da conta: " << getConta() << endl;
 			cout << "Saldo atual: " << getSaldo() << " R$" << endl;
 		}
 		else
 		{
 			cout << "=== Banco Intermares ===" << endl << endl;
 			
-			cout << "Entrada inválida. Tente novamente!" << endl;
+			cout << "Entrada invï¿½lida. Tente novamente!" << endl;
 		}
 		
 		system("pause");
@@ -187,12 +185,12 @@ void ContaBancaria::menuATM(void)
 	}while(opcao != 0);
 }
 
-// Função principal do programa
+// Funï¿½ï¿½o principal do programa
 int main(void)
 {
 	setlocale(LC_ALL, "portuguese");
 	
-	// Definindo instâncias ou objetos da classe
+	// Definindo instï¿½ncias ou objetos da classe
 	ContaBancaria pessoa1("Alysson Machado", 123456);
 	
 	cout << fixed << setprecision(2);
