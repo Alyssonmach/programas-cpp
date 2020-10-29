@@ -1,9 +1,7 @@
-// Implementando um programa de aritmética de frações - un03_lab07.cpp
+// Implementando um programa de aritmï¿½tica de fraï¿½ï¿½es - un03_lab07.cpp
 
-// Aluno Alysson Machado de Oliveira Barbosa
-// Matrícula: 119110236
-// Técnicas de Programação (C++) - Salerno
-// Unidade 03 - Laboratório 09
+// Tï¿½cnicas de Programaï¿½ï¿½o (C++) - Salerno
+// Unidade 03 - Laboratï¿½rio 09
 
 #include <iostream>
 #include <locale>
@@ -19,51 +17,51 @@ class Rational
 		// membros de dados da classe
 		int numerador, denominador;
 	public:
-		// Aplicando construtores sobrecarregados (com e sem parâmetros)
+		// Aplicando construtores sobrecarregados (com e sem parï¿½metros)
 		Rational();
 		Rational(int, int);
-		// Membros de funções da classe
+		// Membros de funï¿½ï¿½es da classe
 		void multiplicaRational(Rational, Rational);
 		void divideRational(Rational, Rational);
 		int getNumerador(void);
 		int getDenominador(void);
 }; // Fim da classe rational
 
-// Implementação do construtor sem parâmetros da classe
+// Implementaï¿½ï¿½o do construtor sem parï¿½metros da classe
 Rational::Rational(void)
 {
 	numerador = 0;
 	denominador = 1;
 }
 
-// Implementação do construtor com parâmetros da classe
+// Implementaï¿½ï¿½o do construtor com parï¿½metros da classe
 Rational::Rational(int num, int den)
 {
 	numerador = num;
 	denominador = den;
 }
-// Implementação dos métodos dos membros de função da classe
+// Implementaï¿½ï¿½o dos mï¿½todos dos membros de funï¿½ï¿½o da classe
 
-// Membro responsável por realizar a multiplicação entre frações
+// Membro responsï¿½vel por realizar a multiplicaï¿½ï¿½o entre fraï¿½ï¿½es
 void Rational::multiplicaRational(Rational num1, Rational num2)
 {
 	
 	numerador = num1.numerador * num2.numerador;
 	denominador = num1.denominador * num2.denominador;
 	
-	cout << "O valor resultante da multiplicação é: " << float(numerador) / float(denominador) << endl;
-	cout << "Em frações, teremos: " << numerador << "/" << denominador << endl << endl;
+	cout << "O valor resultante da multiplicaï¿½ï¿½o ï¿½: " << float(numerador) / float(denominador) << endl;
+	cout << "Em fraï¿½ï¿½es, teremos: " << numerador << "/" << denominador << endl << endl;
 }
 
-// Membro responsável por realizar a divisão entre frações
+// Membro responsï¿½vel por realizar a divisï¿½o entre fraï¿½ï¿½es
 void Rational::divideRational(Rational num1, Rational num2)
 {
 	
 	numerador = num1.numerador * num2.denominador;
 	denominador = num1.denominador * num2.numerador;
 	
-	cout << "O valor resultante da divisão é: " << float(numerador) / float(denominador) << endl;
-	cout << "Em frações, teremos: " << numerador << "/" << denominador << endl << endl;
+	cout << "O valor resultante da divisï¿½o ï¿½: " << float(numerador) / float(denominador) << endl;
+	cout << "Em fraï¿½ï¿½es, teremos: " << numerador << "/" << denominador << endl << endl;
 }
 
 // Retorna o numerador do objeto
@@ -78,29 +76,29 @@ int Rational::getDenominador(void)
 	return denominador;
 } 
 
-// Função principal do programa
+// Funï¿½ï¿½o principal do programa
 int main(void)
 {
 	setlocale(LC_ALL, "portuguese");
 	
-	// Instância ou objetos da classe
+	// Instï¿½ncia ou objetos da classe
 	Rational n1(1, 2), n2(3, 4), r;
 	
 	cout << fixed << setprecision(3);
 	
-	cout << "=== Programa operações com frações ===" << endl << endl;
+	cout << "=== Programa operaï¿½ï¿½es com fraï¿½ï¿½es ===" << endl << endl;
 	
-	// Atribui a r o resultado da multiplicação 
+	// Atribui a r o resultado da multiplicaï¿½ï¿½o 
 	r.multiplicaRational(n1, n2);
 	
-	// Obtém os dados armazenados no objeto r
-	cout << "Os dados de r são: " << r.getNumerador() << "/" << r.getDenominador() << endl;
+	// Obtï¿½m os dados armazenados no objeto r
+	cout << "Os dados de r sï¿½o: " << r.getNumerador() << "/" << r.getDenominador() << endl;
 	
-	// Atribui a r o resultado da divisão 
+	// Atribui a r o resultado da divisï¿½o 
 	r.divideRational(n1, n2);
 	
-	// Obtém os dados armazenados no objeto r
-	cout << "Os dados de r são: " << r.getNumerador() << "/" << r.getDenominador() << endl;
+	// Obtï¿½m os dados armazenados no objeto r
+	cout << "Os dados de r sï¿½o: " << r.getNumerador() << "/" << r.getDenominador() << endl;
 	
 	return 0;
 }

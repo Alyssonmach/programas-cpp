@@ -1,9 +1,7 @@
-// Implementando um sistema de controle de televisão - un03_lab07.cpp
+// Implementando um sistema de controle de televisï¿½o - un03_lab07.cpp
 
-// Aluno Alysson Machado de Oliveira Barbosa
-// Matrícula: 119110236
-// Técnicas de Programação (C++) - Salerno
-// Unidade 03 - Laboratório 07
+// Tï¿½cnicas de Programaï¿½ï¿½o (C++) - Salerno
+// Unidade 03 - Laboratï¿½rio 07
 
 #include <iostream>
 #include <locale>
@@ -11,7 +9,7 @@
 
 using namespace std;
 
-// Definindo uma classe televisão
+// Definindo uma classe televisï¿½o
 class Televisao
 {
 	// Modificador de acesso private
@@ -21,71 +19,71 @@ class Televisao
     public:
     	// Construtor (default)
     	Televisao(void);
-    	// Membros de funções da classe
+    	// Membros de funï¿½ï¿½es da classe
     	void aumentaVolume(void);
     	void diminuiVolume(void);
     	void aumentaCanal(void);
     	void diminuiCanal(void);
     	void trocaCanal(int);
     	void saidaDados(void);
-}; // Fim da classe televisão
+}; // Fim da classe televisï¿½o
 
-// Implementação do construtor da classe
+// Implementaï¿½ï¿½o do construtor da classe
 Televisao::Televisao(void)
 {
 	volume = 15;
 	canal = 0;
 }
 
-// Cabeçalho da função definida no programa
+// Cabeï¿½alho da funï¿½ï¿½o definida no programa
 void menu(class Televisao);
 
-// Implementação dos Métodos dos membros da classe
+// Implementaï¿½ï¿½o dos Mï¿½todos dos membros da classe
 
-// Membro responsável por aumentar volume da televisão
+// Membro responsï¿½vel por aumentar volume da televisï¿½o
 void Televisao::aumentaVolume(void)
 {
 	volume = (volume < 100) ? ++volume : volume;
 }
 
-// Membro responsável por diminuir volume da televisão
+// Membro responsï¿½vel por diminuir volume da televisï¿½o
 void Televisao::diminuiVolume(void)
 {
 	volume = (volume > 0) ? --volume : volume;
 }
 
-// Membro responsável por aumentar o canal da televisão
+// Membro responsï¿½vel por aumentar o canal da televisï¿½o
 void Televisao::aumentaCanal(void)
 {
-	// Uma televisão pode possuir milhares de canais disponíveis
+	// Uma televisï¿½o pode possuir milhares de canais disponï¿½veis
 	canal++;
 }
 
-// Membro responsável por diminuir o canal da televisão
+// Membro responsï¿½vel por diminuir o canal da televisï¿½o
 void Televisao::diminuiCanal(void)
 {
 	canal = (canal > 0) ? --canal : canal;
 }
 
-// Membro responsável por trocar o canal da televisão
+// Membro responsï¿½vel por trocar o canal da televisï¿½o
 void Televisao::trocaCanal(int novo_canal)
 {
 	canal = (novo_canal >= 0) ? novo_canal : canal;
 }
 
-// Membro responsável por imprimir os dados da televisão
+// Membro responsï¿½vel por imprimir os dados da televisï¿½o
 void Televisao::saidaDados(void)
 {
 	cout << "Canal atual: " << canal << endl;
-	cout << "Volume da televisão: " << volume << endl << endl;
+	cout << "Volume da televisï¿½o: " << volume << endl << endl;
 }
 
-// Função principal do programa
+// Funï¿½ï¿½o principal do programa
 int main(void)
 {
 	setlocale(LC_ALL, "portuguese");
 	
-	// Instância ou objeto da função
+	// Instï¿½ncia ou objeto da funï¿½ï¿½o
 	Televisao controle;
 	
 	menu(controle);
@@ -93,14 +91,14 @@ int main(void)
 	return 0;
 }
 
-// Função responsável por criar um menu para a classe
+// Funï¿½ï¿½o responsï¿½vel por criar um menu para a classe
 void menu(Televisao controle)
 {
 	int opcao, canal_novo;
 	
 	do
 	{
-		cout << "|=|=|=| Televisão XingLang Ultra Master Power Fusion 3.0 |=|=|=|" << endl << endl;
+		cout << "|=|=|=| Televisï¿½o XingLang Ultra Master Power Fusion 3.0 |=|=|=|" << endl << endl;
 		
 		controle.saidaDados();
 		
@@ -109,8 +107,8 @@ void menu(Televisao controle)
 		cout << "3 -> CH +" << endl;
 		cout << "4 -> CH -" << endl;
 		cout << "5 -> Acessar Teclado de Canais" << endl;
-		cout << "6 -> Desligar Televisão" << endl << endl;
-		cout << "Opção: ";
+		cout << "6 -> Desligar Televisï¿½o" << endl << endl;
+		cout << "Opï¿½ï¿½o: ";
 		cin >> opcao;
 		
 		if(opcao == 1)
@@ -137,11 +135,11 @@ void menu(Televisao controle)
 		}
 		else if(opcao == 6)
 		{
-			cout << "Televisão Desconectada" << endl << endl;
+			cout << "Televisï¿½o Desconectada" << endl << endl;
 		}
 		else
 		{
-			cout << "Entrada Inválida!" << endl;
+			cout << "Entrada Invï¿½lida!" << endl;
 		}
 		
 		system("pause");
