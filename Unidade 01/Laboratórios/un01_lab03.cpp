@@ -1,16 +1,15 @@
-// Programa de conversão de temperaturas - un01_lab03.cpp
+// Programa de conversï¿½o de temperaturas - un01_lab03.cpp
 
-// Aluno: Alysson Machado de Oliveira Barbosa
-// Unidade 01 - Laboratório de Programação 03
+// Unidade 01 - Laboratï¿½rio de Programaï¿½ï¿½o 03
 
-// Biblioteca padrão de entrada e saída de dados
+// Biblioteca padrï¿½o de entrada e saï¿½da de dados
 #include <iostream>
-// Biblioteca de localização de arquivos
+// Biblioteca de localizaï¿½ï¿½o de arquivos
 #include <locale>
-// Biblioteca para manipulação de dados
+// Biblioteca para manipulaï¿½ï¿½o de dados
 #include <iomanip>
 
-// Acessa as funções da biblioteca padrão
+// Acessa as funï¿½ï¿½es da biblioteca padrï¿½o
 using namespace std;
 
 // Definindo uma union
@@ -20,11 +19,11 @@ union Temperaturas
 	float celsius, fahrenheint;
 }; // Fim da union
 
-// Definindo os cabeçalhos das funções secundárias
+// Definindo os cabeï¿½alhos das funï¿½ï¿½es secundï¿½rias
 float celsius_fahrenheint(Temperaturas);
 float fahrenheint_celsisus(Temperaturas);
 
-// Definindo a função principal
+// Definindo a funï¿½ï¿½o principal
 int main(void)
 {
 	// Configurando o idioma brasileiro
@@ -33,84 +32,84 @@ int main(void)
 	// Inicializando um novo tipo da union
 	Temperaturas valores;
 	
-	// Inicializando variáveis locais
+	// Inicializando variï¿½veis locais
 	int opcao;
 	
-	// Informa ao usuário a função do programa
+	// Informa ao usuï¿½rio a funï¿½ï¿½o do programa
 	cout << "Programa conversor de temperaturas." << endl << endl;
 	
-	// Define uma precisão de duas casas decimais
+	// Define uma precisï¿½o de duas casas decimais
 	cout << fixed << setprecision(2);
 	
-	// Criando um menu de opções para o usuário
-	cout << "Escolha uma opção de conversão:" << endl;
+	// Criando um menu de opï¿½ï¿½es para o usuï¿½rio
+	cout << "Escolha uma opï¿½ï¿½o de conversï¿½o:" << endl;
 	cout << "1 - Celsius para Fahrenheint" << endl;
 	cout << "2 - Fahrenheint para Celsius" << endl << endl;
 	
-	// Estrutura de repetição para receber os dados corretos do usuário
+	// Estrutura de repetiï¿½ï¿½o para receber os dados corretos do usuï¿½rio
 	do
 	{
-		// Recebe a opção informada pelo usuário
-		cout << "Opção:";
+		// Recebe a opï¿½ï¿½o informada pelo usuï¿½rio
+		cout << "Opï¿½ï¿½o:";
 		cin >> opcao;
 		
 		// Caso a entrada seja incorreta...
 		if(opcao < 1 || opcao > 2)
 		{
-			// Informa uma mensagem de aviso ao usuário
+			// Informa uma mensagem de aviso ao usuï¿½rio
 			cout << "Valor incorreto. Por favor tente novamente." << endl;
-		} // Fim da estrutura de condição
-	}while(opcao < 1 || opcao > 2); // Fim da estrutura de repetição
+		} // Fim da estrutura de condiï¿½ï¿½o
+	}while(opcao < 1 || opcao > 2); // Fim da estrutura de repetiï¿½ï¿½o
 	
 	// Quebra de linha
 	cout << endl;
 	
-	// Caso opção seja 1...
+	// Caso opï¿½ï¿½o seja 1...
 	if(opcao == 1)
-	{	// Recebe a temperatura em celsius do usuário
+	{	// Recebe a temperatura em celsius do usuï¿½rio
 		cout << "Informe a temperatura em celsius: ";
 		cin >> valores.celsius;
 		
-		// Chamando a função que converte a temperatura
+		// Chamando a funï¿½ï¿½o que converte a temperatura
 		cout << "Fahrenheint: " << celsius_fahrenheint(valores) << " F." << endl;
 	}
-	// Se não
+	// Se nï¿½o
 	else
 	{
-		// Recebe a temperatura em fahrenheint do usuário
+		// Recebe a temperatura em fahrenheint do usuï¿½rio
 		cout << "Informe a temperatura em fahrenheint: ";
 		cin >> valores.fahrenheint;
 		
-		// Chamando a função que converte a temperatura
-		cout << "Celsisus: " << fahrenheint_celsisus(valores) << "º C." << endl;
-	} // Fim da estrutura de repetição
+		// Chamando a funï¿½ï¿½o que converte a temperatura
+		cout << "Celsisus: " << fahrenheint_celsisus(valores) << "ï¿½ C." << endl;
+	} // Fim da estrutura de repetiï¿½ï¿½o
 	
-	// Indica que a função terminou com sucesso
+	// Indica que a funï¿½ï¿½o terminou com sucesso
 	return 0;
-} // Fim da função principal
+} // Fim da funï¿½ï¿½o principal
 
-// Função secundária que converte uma temperatura em celsius para fahrenheint
+// Funï¿½ï¿½o secundï¿½ria que converte uma temperatura em celsius para fahrenheint
 float celsius_fahrenheint(Temperaturas valores)
 {
-	// Incializando uma variável local
+	// Incializando uma variï¿½vel local
 	float grau_fahrenheint;
 	
-	// Realiza a operação de conversão de temperaturas
+	// Realiza a operaï¿½ï¿½o de conversï¿½o de temperaturas
 	grau_fahrenheint = valores.celsius * (9.0 / 5.0) + 32.0;
 	
-	// Função retorna o valor calculado
+	// Funï¿½ï¿½o retorna o valor calculado
 	return grau_fahrenheint;
-} // Fim da função secundária
+} // Fim da funï¿½ï¿½o secundï¿½ria
 
-// Função secundária que converte uma temperatura em fahrenheint para celsius
+// Funï¿½ï¿½o secundï¿½ria que converte uma temperatura em fahrenheint para celsius
 float fahrenheint_celsisus(Temperaturas valores)
 {
-	// Incializando uma variável local
+	// Incializando uma variï¿½vel local
 	float grau_celsius;
  	
- 	// Realiza a operação de conversão de temperaturas
+ 	// Realiza a operaï¿½ï¿½o de conversï¿½o de temperaturas
  	grau_celsius = 5.0 * (valores.fahrenheint - 32.0) / 9.0;
  	
- 	// Função retorna o valor calculado
+ 	// Funï¿½ï¿½o retorna o valor calculado
 	return grau_celsius;
-} // Fim da função secundária
+} // Fim da funï¿½ï¿½o secundï¿½ria

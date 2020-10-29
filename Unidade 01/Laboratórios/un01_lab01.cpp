@@ -1,18 +1,17 @@
-// Usando uma struct para definir a distância entre dois pontos - un01_lab01.cpp
+// Usando uma struct para definir a distï¿½ncia entre dois pontos - un01_lab01.cpp
 
-// Aluno: Alysson Machado de Oliveira Barbosa
-// Unidade 01 - Laboratório de Programação 01
+// Unidade 01 - Laboratï¿½rio de Programaï¿½ï¿½o 01
 
-// Biblioteca padrão de entrada e saída de dados
+// Biblioteca padrï¿½o de entrada e saï¿½da de dados
 #include <iostream>
-// Biblioteca de localização de arquivos
+// Biblioteca de localizaï¿½ï¿½o de arquivos
 #include <locale>
-// Biblioteca para manipulação de dados
+// Biblioteca para manipulaï¿½ï¿½o de dados
 #include <iomanip>
 
 #include <cmath>
 
-// Acessa as funções das bibliotecas padrão
+// Acessa as funï¿½ï¿½es das bibliotecas padrï¿½o
 using namespace std;
 
 // Definindo uma struct
@@ -22,10 +21,10 @@ struct Ponto
 	int x, y; 
 }; // Fim da struct
 
-// Definindo o cabeçalho das funções secundárias
+// Definindo o cabeï¿½alho das funï¿½ï¿½es secundï¿½rias
 float calcula_distancia(Ponto []);
 
-// Função principal do programa
+// Funï¿½ï¿½o principal do programa
 int main(void)
 {
 	// Configurando o idioma brasileiros
@@ -35,38 +34,38 @@ int main(void)
 	Ponto valores[2];
 	
 	// Informa sobre a finalidade do programa
-	cout << "Programa que calcula a distância entre dois pontos." << endl << endl;
+	cout << "Programa que calcula a distï¿½ncia entre dois pontos." << endl << endl;
 	
-	// Estrutura de repetição para recebimento dos dados no vetor valores
+	// Estrutura de repetiï¿½ï¿½o para recebimento dos dados no vetor valores
 	for(int i = 0; i < 2; i++)
 	{
-		// Fluxo de entrada e saída de dados
-		cout << "Insira a coordenada x do " << i + 1 << "º ponto: ";
+		// Fluxo de entrada e saï¿½da de dados
+		cout << "Insira a coordenada x do " << i + 1 << "ï¿½ ponto: ";
 		cin >> valores[i].x;
-		cout << "Insira a coordenada y do " << i + 1 << "º ponto: ";
+		cout << "Insira a coordenada y do " << i + 1 << "ï¿½ ponto: ";
 		cin >> valores[i].y;
 		
 	}
 	
-	// Define uma precisão de duas casas decimais após a virgula
+	// Define uma precisï¿½o de duas casas decimais apï¿½s a virgula
 	cout << fixed << setprecision(2);
-	// Chama a função que calcula a distância entre os dois pontos
-	cout << "A distância entre os dois pontos é: " << calcula_distancia(valores) << endl;
+	// Chama a funï¿½ï¿½o que calcula a distï¿½ncia entre os dois pontos
+	cout << "A distï¿½ncia entre os dois pontos ï¿½: " << calcula_distancia(valores) << endl;
 	
 	
 	// Indica que o programa terminou com sucesso
 	return 0;
-} // Fim da função principal
+} // Fim da funï¿½ï¿½o principal
 
-// Função secundária que calcula a distância entre dois pontos
+// Funï¿½ï¿½o secundï¿½ria que calcula a distï¿½ncia entre dois pontos
 float calcula_distancia(Ponto valores[])
 {
-	// Definindo uma variável local da função
+	// Definindo uma variï¿½vel local da funï¿½ï¿½o
 	float resultado;
 	
-	// Calculando a distância euclidiana entre dois pontos
+	// Calculando a distï¿½ncia euclidiana entre dois pontos
 	resultado = sqrt(pow(valores[1].x - valores[0].x, 2) + pow(valores[1].y - valores[0].y, 2));
 	
-	// Função retorna o resultado da distância euclidiana
+	// Funï¿½ï¿½o retorna o resultado da distï¿½ncia euclidiana
 	return resultado;
-} // Fim da função secundária
+} // Fim da funï¿½ï¿½o secundï¿½ria
