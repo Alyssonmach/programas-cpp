@@ -1,9 +1,7 @@
-// Implementação de um programa que cadastra usuários em laboratório - Professor.h
+// Implementaï¿½ï¿½o de um programa que cadastra usuï¿½rios em laboratï¿½rio - Professor.h
 
-// Aluno Alysson Machado de Oliveira Barbosa
-// Matrícula: 119110236
-// Técnicas de Programação (C++) - Salerno
-// Unidade 06 - Laboratório 19 
+// Tï¿½cnicas de Programaï¿½ï¿½o (C++) - Salerno
+// Unidade 06 - Laboratï¿½rio 19 
 // Ambiente de Desenvolvimento: Falcon C++
 
 #ifndef PROFESSOR_H
@@ -23,7 +21,7 @@ class Professor : public Usuario
     public:
     	// construtor da classe
     	Professor(string = " ", string = " ", int = 0, string = " ", int = 0);
-    	// membros de funções da classe
+    	// membros de funï¿½ï¿½es da classe
     	string getDepartamento(void) const;
     	int getSala(void) const;
 };

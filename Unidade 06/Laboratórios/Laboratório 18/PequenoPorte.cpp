@@ -1,9 +1,7 @@
-// Programa de tributação de impostos em empresas - PequenoPorte.cpp
+// Programa de tributaï¿½ï¿½o de impostos em empresas - PequenoPorte.cpp
 
-// Aluno Alysson Machado de Oliveira Barbosa
-// Matrícula: 119110236
-// Técnicas de Programação (C++) - Salerno
-// Unidade 06 - Laboratório 18
+// Tï¿½cnicas de Programaï¿½ï¿½o (C++) - Salerno
+// Unidade 06 - Laboratï¿½rio 18
 // Ambiente de Desenvolvimento: Falcon C++
 
 #include "PequenoPorte.h"
@@ -15,13 +13,13 @@ PequenoPorte::PequenoPorte(string nome, long int cgc, float faturamento, float i
 	this -> simples = simples;
 }
 
-// método que configura os impostos brutos
+// mï¿½todo que configura os impostos brutos
 void PequenoPorte::setImpostos(float impostos)
 {
 	this -> impostos = (impostos > 0) ? impostos : 0;
 }
 
-// método que retorna os impostos tributados
+// mï¿½todo que retorna os impostos tributados
 float PequenoPorte::getImpostos(void) const
 {
 	if(simples == true)
@@ -30,7 +28,7 @@ float PequenoPorte::getImpostos(void) const
 		return ((impostos * getFaturamento()) - (0.5 * (impostos * getFaturamento())));
 }
 
-// método que retorna a situação de cadastro da pequena empresa no SIMPLES
+// mï¿½todo que retorna a situaï¿½ï¿½o de cadastro da pequena empresa no SIMPLES
 bool PequenoPorte::getSIMPLES(void) const
 {
 	return simples;

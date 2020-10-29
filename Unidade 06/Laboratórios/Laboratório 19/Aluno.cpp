@@ -1,9 +1,7 @@
-// Implementação de um programa que cadastra usuários em laboratório - Aluno.cpp
+// Implementaï¿½ï¿½o de um programa que cadastra usuï¿½rios em laboratï¿½rio - Aluno.cpp
 
-// Aluno Alysson Machado de Oliveira Barbosa
-// Matrícula: 119110236
-// Técnicas de Programação (C++) - Salerno
-// Unidade 06 - Laboratório 19 
+// Tï¿½cnicas de Programaï¿½ï¿½o (C++) - Salerno
+// Unidade 06 - Laboratï¿½rio 19 
 // Ambiente de Desenvolvimento: Falcon C++
 
 #include "Aluno.h"
@@ -15,13 +13,13 @@ Aluno::Aluno(string nome, string email, int idade, string matricula, string curs
 	this -> curso = curso;
 }
 
-// método que retorna a matrícula do usuário
+// mï¿½todo que retorna a matrï¿½cula do usuï¿½rio
 string Aluno::getMatricula(void) const
 {
 	return matricula;
 }
 
-// método que retorna o curso do usuário
+// mï¿½todo que retorna o curso do usuï¿½rio
 string Aluno::getCurso(void) const
 {
 	return curso;

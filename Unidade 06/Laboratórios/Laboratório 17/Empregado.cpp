@@ -1,9 +1,7 @@
-// Implementação de um programa que simula o registro de empregados - Empregado.cpp
+// Implementaï¿½ï¿½o de um programa que simula o registro de empregados - Empregado.cpp
 
-// Aluno Alysson Machado de Oliveira Barbosa
-// Matrícula: 119110236
-// Técnicas de Programação (C++) - Salerno
-// Unidade 06 - Laboratório 17 
+// Tï¿½cnicas de Programaï¿½ï¿½o (C++) - Salerno
+// Unidade 06 - Laboratï¿½rio 17 
 // Ambiente de Desenvolvimento: Falcon C++
 
 #include "Empregado.h"
@@ -16,37 +14,37 @@ Empregado::Empregado(int numeroSecao, float salarioBase, float ir)
 	this -> ir = ir;
 }
 
-// Método da classe para cadastrar o número da seção do trabalhador
+// Mï¿½todo da classe para cadastrar o nï¿½mero da seï¿½ï¿½o do trabalhador
 void Empregado::setNumeroSecao(int numeroSecao)
 {
 	this -> numeroSecao = (numeroSecao > 0) ? numeroSecao:0;
 }
 
-// Método da classe para cadastrar o salário bruto do trabalhador
+// Mï¿½todo da classe para cadastrar o salï¿½rio bruto do trabalhador
 void Empregado::setSalarioBase(float salarioBase)
 {
 	this -> salarioBase = (salarioBase > 0) ? salarioBase:0;
 }
 
-// Método da classe para cadastrar a taxa de imposto de renda 
-// sobre o salário do trabalhador
+// Mï¿½todo da classe para cadastrar a taxa de imposto de renda 
+// sobre o salï¿½rio do trabalhador
 void Empregado::setIR(float ir)
 {
 	this -> ir = (ir > 0 && ir <= 1) ? ir:0;
 }
 
-// Método para calcular e retornar o salário líquido do trabalhador
+// Mï¿½todo para calcular e retornar o salï¿½rio lï¿½quido do trabalhador
 float Empregado::calculaSalario(void) const
 {
 	return (salarioBase - salarioBase*ir);
 }
 
-// Método para impressão dos dados da classe 
-// (Não recomendado, mas é requisito da aplicação)
+// Mï¿½todo para impressï¿½o dos dados da classe 
+// (Nï¿½o recomendado, mas ï¿½ requisito da aplicaï¿½ï¿½o)
 void Empregado::getDados(void) const
 {
 	Pessoa::imprimeNomeCPF();
 	
-	cout << "Número da Seção: " << numeroSecao << endl;
-	cout << "Salário Líquido: " << Empregado::calculaSalario() << " R$" << endl;
+	cout << "Nï¿½mero da Seï¿½ï¿½o: " << numeroSecao << endl;
+	cout << "Salï¿½rio Lï¿½quido: " << Empregado::calculaSalario() << " R$" << endl;
 }

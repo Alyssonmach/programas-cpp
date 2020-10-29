@@ -1,9 +1,7 @@
-// Implementação de um programa que simula o gerenciamento de imóveis - Novo.cpp
+// Implementaï¿½ï¿½o de um programa que simula o gerenciamento de imï¿½veis - Novo.cpp
 
-// Aluno Alysson Machado de Oliveira Barbosa
-// Matrícula: 119110236
-// Técnicas de Programação (C++) - Salerno
-// Unidade 06 - Laboratório 16 
+// Tï¿½cnicas de Programaï¿½ï¿½o (C++) - Salerno
+// Unidade 06 - Laboratï¿½rio 16 
 // Ambiente de Desenvolvimento: Falcon C++
 
 #include "Novo.h"
@@ -18,13 +16,13 @@ Novo::Novo(string rua, int numero, string bairro, string cep, float preco) : Imo
 	this -> preco = preco;
 }
 
-// Método da classe que configura o preço da casa nova
+// Mï¿½todo da classe que configura o preï¿½o da casa nova
 void Novo::setPreco(float preco)
 {
 	this -> preco = (preco > 0) ? preco:(this -> preco);
 }
 
-// Método da classe que configura o endereço da casa nova
+// Mï¿½todo da classe que configura o endereï¿½o da casa nova
 void Novo::setEndereco(string rua, int numero, string bairro, string cep)
 {
 	this -> endereco.rua = rua;
@@ -33,23 +31,23 @@ void Novo::setEndereco(string rua, int numero, string bairro, string cep)
 	this -> endereco.CEP = cep;
 }
 
-// Método da classe que retorna preço da casa sem a taxa de aumento
+// Mï¿½todo da classe que retorna preï¿½o da casa sem a taxa de aumento
 float Novo::getPreco(void) const
 {
 	return preco;
 }
 
-// Método da classe que retorna o preço da nova casa com a taxa de aumento
+// Mï¿½todo da classe que retorna o preï¿½o da nova casa com a taxa de aumento
 float Novo::getPrecoAumento(void) const
 {
 	return preco + (preco * getAumenta());
 }
 
-// Método da classe que retorna o endereço da nova casa
+// Mï¿½todo da classe que retorna o endereï¿½o da nova casa
 void Novo::getEndereco(void) const
 {
 	cout << "Rua: " << endereco.rua << endl;
-	cout << "Número: " << endereco.numero << endl;
+	cout << "Nï¿½mero: " << endereco.numero << endl;
 	cout << "Bairro: " << endereco.bairro << endl;
 	cout << "CEP: " << endereco.CEP << endl;
 }

@@ -1,15 +1,13 @@
-// Implementação de um programa que simula o gerenciamento de imóveis - Imovel.h
+// Implementaï¿½ï¿½o de um programa que simula o gerenciamento de imï¿½veis - Imovel.h
 
-// Aluno Alysson Machado de Oliveira Barbosa
-// Matrícula: 119110236
-// Técnicas de Programação (C++) - Salerno
-// Unidade 06 - Laboratório 16 
+// Tï¿½cnicas de Programaï¿½ï¿½o (C++) - Salerno
+// Unidade 06 - Laboratï¿½rio 16 
 // Ambiente de Desenvolvimento: Falcon C++
 
 #ifndef IMOVEL_H
 #define IMOVEL_H
 
-// definindo uma struct para armazenar o endereço do cliente
+// definindo uma struct para armazenar o endereï¿½o do cliente
 struct Endereco
 {
 	string rua;
@@ -21,7 +19,7 @@ struct Endereco
 // definindo uma classe base Imovel 
 class Imovel 
 {
-	// Especificação de acesso protected para dar acesso a outras classes 
+	// Especificaï¿½ï¿½o de acesso protected para dar acesso a outras classes 
 	protected:
 		Endereco endereco;
 		float preco;

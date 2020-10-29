@@ -1,9 +1,7 @@
 // Programa gerenciador de estoque em produto - PlayStation.cpp
 
-// Aluno Alysson Machado de Oliveira Barbosa
-// Matrícula: 119110236
-// Técnicas de Programação (C++) - Salerno
-// Unidade 06 - Laboratório 20
+// Tï¿½cnicas de Programaï¿½ï¿½o (C++) - Salerno
+// Unidade 06 - Laboratï¿½rio 20
 // Ambiente de Desenvolvimento: Falcon C++
 
 #include "PlayStation.h"
@@ -14,13 +12,13 @@ PlayStation::PlayStation(float preco, int estoque, string nome, float desconto) 
 	this -> desconto = (desconto > 0) ? desconto : 0;
 }
 
-// método que retorna a porcentagem de desconto aplicado quando o produto passa do limite em estoque
+// mï¿½todo que retorna a porcentagem de desconto aplicado quando o produto passa do limite em estoque
 float PlayStation::getDesconto(void) const
 {
 	return desconto;
 }
 
-// método que verifica se o desconto precisa ser aplicado ou não
+// mï¿½todo que verifica se o desconto precisa ser aplicado ou nï¿½o
 bool PlayStation::verificaDesconto(int estoque_atual) const
 {
 	if(estoque_atual > getEstoque())
@@ -35,7 +33,7 @@ bool PlayStation::verificaDesconto(int estoque_atual) const
 	return false;
 }
 
-// método que retorna o preço atual com desconto ou sem desconto, de acordo com o estoque atual
+// mï¿½todo que retorna o preï¿½o atual com desconto ou sem desconto, de acordo com o estoque atual
 float PlayStation::getPrecoAtual(int estoque_atual) const
 {
 	if (estoque_atual > getEstoque())

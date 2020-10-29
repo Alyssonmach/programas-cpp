@@ -1,9 +1,7 @@
-// Implementação de um programa que cadastra usuários em laboratório - Usuario.cpp
+// Implementaï¿½ï¿½o de um programa que cadastra usuï¿½rios em laboratï¿½rio - Usuario.cpp
 
-// Aluno Alysson Machado de Oliveira Barbosa
-// Matrícula: 119110236
-// Técnicas de Programação (C++) - Salerno
-// Unidade 06 - Laboratório 19 
+// Tï¿½cnicas de Programaï¿½ï¿½o (C++) - Salerno
+// Unidade 06 - Laboratï¿½rio 19 
 // Ambiente de Desenvolvimento: Falcon C++
 
 #include "Usuario.h"
@@ -16,19 +14,19 @@ Usuario::Usuario(string nome, string email, int idade)
 	this -> idade = (idade > 0) ? idade : 0;
 }
 
-// método que retorna o nome do usuário
+// mï¿½todo que retorna o nome do usuï¿½rio
 string Usuario::getNome(void) const
 {
 	return nome;
 }
 
-// método que retorna o email do usuário
+// mï¿½todo que retorna o email do usuï¿½rio
 string Usuario::getEmail(void) const
 {
 	return email;
 }
 
-// método que retorna a idade do usuário
+// mï¿½todo que retorna a idade do usuï¿½rio
 int Usuario::getIdade(void) const
 {
 	return idade;

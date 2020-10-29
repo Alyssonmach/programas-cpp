@@ -1,9 +1,7 @@
-// Programa de tributação de impostos em empresas - PequenoPorte.h
+// Programa de tributaï¿½ï¿½o de impostos em empresas - PequenoPorte.h
 
-// Aluno Alysson Machado de Oliveira Barbosa
-// Matrícula: 119110236
-// Técnicas de Programação (C++) - Salerno
-// Unidade 06 - Laboratório 18
+// Tï¿½cnicas de Programaï¿½ï¿½o (C++) - Salerno
+// Unidade 06 - Laboratï¿½rio 18
 // Ambiente de Desenvolvimento: Falcon C++
 
 #ifndef PEQUENOPORTE_H
@@ -23,7 +21,7 @@ class PequenoPorte : public Empresa
     public:
     	// construtor da classe
     	PequenoPorte(string = " ", long int = 0, float = 0.0, float = 0.0, bool = false);
-    	// membros de funções da classe
+    	// membros de funï¿½ï¿½es da classe
     	void setImpostos(float);
     	float getImpostos(void) const;
     	bool getSIMPLES(void) const;

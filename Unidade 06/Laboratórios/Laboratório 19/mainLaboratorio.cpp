@@ -1,9 +1,7 @@
-// Implementação de um programa que cadastra usuários em laboratório - mainLaboratorio.cpp
+// Implementaï¿½ï¿½o de um programa que cadastra usuï¿½rios em laboratï¿½rio - mainLaboratorio.cpp
 
-// Aluno Alysson Machado de Oliveira Barbosa
-// Matrícula: 119110236
-// Técnicas de Programação (C++) - Salerno
-// Unidade 06 - Laboratório 19 
+// Tï¿½cnicas de Programaï¿½ï¿½o (C++) - Salerno
+// Unidade 06 - Laboratï¿½rio 19 
 // Ambiente de Desenvolvimento: Falcon C++
 
 #include <iostream>
@@ -13,16 +11,16 @@
 
 using namespace std;
 
-// arquivos de cabeçalho das classes
+// arquivos de cabeï¿½alho das classes
 #include "Usuario.cpp"
 #include "Aluno.cpp"
 #include "Professor.cpp"
 
-// arquivos de cabeçalho das funções
+// arquivos de cabeï¿½alho das funï¿½ï¿½es
 void visualizaAluno(class Aluno);
 void visualizaProfessor(class Professor);
 
-// função principal do programa
+// funï¿½ï¿½o principal do programa
 int main(void)
 {
 	setlocale(LC_ALL, "Portuguese");
@@ -35,15 +33,15 @@ int main(void)
 	
 	do
 	{
-		cout << "=== Programa de Registro em Laboratório ===" << endl << endl;
+		cout << "=== Programa de Registro em Laboratï¿½rio ===" << endl << endl;
 		
-		cout << "Escolha uma opção:" << endl;
-		cout << "1 - Cadastrar aluno no laboratório;" << endl;
-		cout << "2 - Visualizar informações do aluno;" << endl;
-		cout << "3 - Cadastrar professor no laboratório;" << endl;
-		cout << "4 - Visualizar informações do professor;" << endl;
+		cout << "Escolha uma opï¿½ï¿½o:" << endl;
+		cout << "1 - Cadastrar aluno no laboratï¿½rio;" << endl;
+		cout << "2 - Visualizar informaï¿½ï¿½es do aluno;" << endl;
+		cout << "3 - Cadastrar professor no laboratï¿½rio;" << endl;
+		cout << "4 - Visualizar informaï¿½ï¿½es do professor;" << endl;
 		cout << "5 - Sair do programa;" << endl << endl;
-		cout << "Informe sua opção: ";
+		cout << "Informe sua opï¿½ï¿½o: ";
 		cin >> opcao;
 		
 		cout << endl << endl;
@@ -54,18 +52,18 @@ int main(void)
 		if(opcao == 1 || opcao == 3)
 		{
 			cin.ignore();
-			cout << "Informe o nome do usuário: ";
+			cout << "Informe o nome do usuï¿½rio: ";
 			getline(cin, nome);
-			cout << "Informe o email do usuário: ";
+			cout << "Informe o email do usuï¿½rio: ";
 			getline(cin, email);
-			cout << "Informe a idade do usuário: ";
+			cout << "Informe a idade do usuï¿½rio: ";
 			cin >> idade;
 			
 			if(opcao == 1)
 			{
 				
 				cin.ignore();
-				cout << "Informe a matrícula do aluno: ";
+				cout << "Informe a matrï¿½cula do aluno: ";
 				getline(cin, matricula);
 				cout << "Informe o curso do aluno: ";
 				getline(cin, curso);
@@ -103,7 +101,7 @@ int main(void)
 		}
 		else
 		{
-			cout << "Entrada Inválida, tente novamente." << endl << endl;
+			cout << "Entrada Invï¿½lida, tente novamente." << endl << endl;
 		}
 		cout << endl << endl;
 		
@@ -114,7 +112,7 @@ int main(void)
 	return 0;
 }
 
-// função responsável por mostrar os dados da classe Aluno
+// funï¿½ï¿½o responsï¿½vel por mostrar os dados da classe Aluno
 void visualizaAluno(Aluno aux)
 {
 	cout << "=== Dados do Aluno ===" << endl;
@@ -126,7 +124,7 @@ void visualizaAluno(Aluno aux)
 	cout << "Curso: " << aux.getCurso() << endl;
 }
 
-// função responsável por mostrar os dados da classe Professor
+// funï¿½ï¿½o responsï¿½vel por mostrar os dados da classe Professor
 void visualizaProfessor(Professor aux)
 {
 	cout << "=== Dados do Professor ===" << endl;

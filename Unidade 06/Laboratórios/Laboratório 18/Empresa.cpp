@@ -1,9 +1,7 @@
-// Programa de tributação de impostos em empresas - Empresa.cpp
+// Programa de tributaï¿½ï¿½o de impostos em empresas - Empresa.cpp
 
-// Aluno Alysson Machado de Oliveira Barbosa
-// Matrícula: 119110236
-// Técnicas de Programação (C++) - Salerno
-// Unidade 06 - Laboratório 18
+// Tï¿½cnicas de Programaï¿½ï¿½o (C++) - Salerno
+// Unidade 06 - Laboratï¿½rio 18
 // Ambiente de Desenvolvimento: Falcon C++
 
 #include "Empresa.h"
@@ -16,19 +14,19 @@ Empresa::Empresa(string nome, long int cgc, float faturamento)
 	this -> faturamento = (faturamento > 0) ? faturamento : 0;
 }
 
-// método que retorna o nome da empresa
+// mï¿½todo que retorna o nome da empresa
 string Empresa::getNome(void) const
 {
 	return nome;
 }
 
-// método que retorna o CJC da empresa
+// mï¿½todo que retorna o CJC da empresa
 long int Empresa::getCGC(void) const
 {
 	return cgc;
 }
 
-// método que retorna o faturamento da empresa
+// mï¿½todo que retorna o faturamento da empresa
 float Empresa::getFaturamento(void) const
 {
 	return faturamento;

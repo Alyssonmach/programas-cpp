@@ -1,15 +1,13 @@
-// Implementação de um programa que cadastra usuários em laboratório - Usuario.h
+// Implementaï¿½ï¿½o de um programa que cadastra usuï¿½rios em laboratï¿½rio - Usuario.h
 
-// Aluno Alysson Machado de Oliveira Barbosa
-// Matrícula: 119110236
-// Técnicas de Programação (C++) - Salerno
-// Unidade 06 - Laboratório 19 
+// Tï¿½cnicas de Programaï¿½ï¿½o (C++) - Salerno
+// Unidade 06 - Laboratï¿½rio 19 
 // Ambiente de Desenvolvimento: Falcon C++
 
 #ifndef USUARIO_H
 #define USUARIO_H
 
-// definindo uma classe base usuário
+// definindo uma classe base usuï¿½rio
 class Usuario 
 {
 	// especificador de acesso protected
@@ -22,7 +20,7 @@ class Usuario
 	public:
 		// construtor da classe
 		Usuario(string = " ", string = " ", int = 0);
-		// membro de funções da classe
+		// membro de funï¿½ï¿½es da classe
 		string getNome(void) const;
 		string getEmail(void) const;
 		int getIdade(void) const;

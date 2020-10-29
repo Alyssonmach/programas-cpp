@@ -1,9 +1,7 @@
-// Implementação de um programa que cadastra usuários em laboratório - Professor.cpp
+// Implementaï¿½ï¿½o de um programa que cadastra usuï¿½rios em laboratï¿½rio - Professor.cpp
 
-// Aluno Alysson Machado de Oliveira Barbosa
-// Matrícula: 119110236
-// Técnicas de Programação (C++) - Salerno
-// Unidade 06 - Laboratório 19 
+// Tï¿½cnicas de Programaï¿½ï¿½o (C++) - Salerno
+// Unidade 06 - Laboratï¿½rio 19 
 // Ambiente de Desenvolvimento: Falcon C++
 
 #include "Professor.h"
@@ -15,13 +13,13 @@ Professor::Professor(string nome, string email, int idade, string departamento, 
 	this -> sala = (sala > 0) ? sala : 0;
 }
 
-// método que retorna o departamento
+// mï¿½todo que retorna o departamento
 string Professor::getDepartamento(void) const
 {
 	return departamento;
 }
 
-// método que retorna a sala
+// mï¿½todo que retorna a sala
 int Professor::getSala(void) const
 {
 	return sala;

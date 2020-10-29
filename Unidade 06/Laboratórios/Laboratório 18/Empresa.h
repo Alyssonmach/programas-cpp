@@ -1,9 +1,7 @@
-// Programa de tributação de impostos em empresas - Empresa.h
+// Programa de tributaï¿½ï¿½o de impostos em empresas - Empresa.h
 
-// Aluno Alysson Machado de Oliveira Barbosa
-// Matrícula: 119110236
-// Técnicas de Programação (C++) - Salerno
-// Unidade 06 - Laboratório 18
+// Tï¿½cnicas de Programaï¿½ï¿½o (C++) - Salerno
+// Unidade 06 - Laboratï¿½rio 18
 // Ambiente de Desenvolvimento: Falcon C++
 
 #ifndef EMPRESA_H
@@ -22,7 +20,7 @@ class Empresa
     public:
     	// construtor da classe
     	Empresa(string = " ", long int = 0, float = 0.0);
-    	// membros de funções da classe
+    	// membros de funï¿½ï¿½es da classe
     	string getNome(void) const;
     	long int getCGC(void) const;
     	float getFaturamento(void) const;

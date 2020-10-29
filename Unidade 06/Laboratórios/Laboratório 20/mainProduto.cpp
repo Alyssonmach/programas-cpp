@@ -1,9 +1,7 @@
 // Programa gerenciador de estoque em produto - mainProduto.cpp
 
-// Aluno Alysson Machado de Oliveira Barbosa
-// Matrícula: 119110236
-// Técnicas de Programação (C++) - Salerno
-// Unidade 06 - Laboratório 20
+// Tï¿½cnicas de Programaï¿½ï¿½o (C++) - Salerno
+// Unidade 06 - Laboratï¿½rio 20
 // Ambiente de Desenvolvimento: Falcon C++
 
 #include <iostream>
@@ -13,16 +11,16 @@
 
 using namespace std;
 
-// cabeçalho das classes implementadas
+// cabeï¿½alho das classes implementadas
 #include "Produto.cpp"
 #include "PlayStation.cpp"
 #include "Xbox.cpp"
 
-// cabeçalho das funções
+// cabeï¿½alho das funï¿½ï¿½es
 void visualiza_dados1(class PlayStation, int);
 void visualiza_dados2(class Xbox, int);
 
-// função principal do programa
+// funï¿½ï¿½o principal do programa
 int main(void)
 {
 	setlocale(LC_ALL, "Portuguese");
@@ -31,7 +29,7 @@ int main(void)
 	
 	cout << fixed << setprecision(2);
 	
-	// instâncias ou objetos da classe
+	// instï¿½ncias ou objetos da classe
 	PlayStation console1(5000, 40, "PlayStation 5", 0.2);
 	Xbox console2(4000, 55, "Xbox One", 0.3);
 	
@@ -49,41 +47,41 @@ int main(void)
 	return 0;
 }
 
-// função que retorna os dados dos objetos da classe PlayStation
+// funï¿½ï¿½o que retorna os dados dos objetos da classe PlayStation
 void visualiza_dados1(PlayStation aux, int estoque_atual)
 {
 	cout << "Nome do Produto: " << aux.getNome() << endl;
-	cout << "Preço original do Produto: " << aux.getPreco() << " R$" << endl;
+	cout << "Preï¿½o original do Produto: " << aux.getPreco() << " R$" << endl;
 	cout << "Estoque limite: " << aux.getEstoque() << " Produtos" << endl;
 	cout << "Estoque atual: " << estoque_atual << " Produtos" << endl;
-	cout << "Porcentagem de Desconto Possível: " << aux.getDesconto() * 100 << "%" << endl;
+	cout << "Porcentagem de Desconto Possï¿½vel: " << aux.getDesconto() * 100 << "%" << endl;
 	if(aux.verificaDesconto(estoque_atual) == true)
 	{
-		cout << "O desconto será aplicado ao produto" << endl;
+		cout << "O desconto serï¿½ aplicado ao produto" << endl;
 	} 
 	else
 	{
-		cout << "O desconto não será aplicado ao produto" << endl;
+		cout << "O desconto nï¿½o serï¿½ aplicado ao produto" << endl;
 	}
-	cout << "Preço atual do Produto: " << aux.getPrecoAtual(estoque_atual) << " R$" << endl;
+	cout << "Preï¿½o atual do Produto: " << aux.getPrecoAtual(estoque_atual) << " R$" << endl;
 	
 }
 
-// função que retorna os dados dos objetos da classe Xbox
+// funï¿½ï¿½o que retorna os dados dos objetos da classe Xbox
 void visualiza_dados2(Xbox aux, int estoque_atual)
 {
 	cout << "Nome do Produto: " << aux.getNome() << endl;
-	cout << "Preço original do Produto: " << aux.getPreco() << " R$" << endl;
+	cout << "Preï¿½o original do Produto: " << aux.getPreco() << " R$" << endl;
 	cout << "Estoque limite: " << aux.getEstoque() << " Produtos" << endl;
 	cout << "Estoque atual: " << estoque_atual << " Produtos" << endl;
-	cout << "Porcentagem de Desconto Possível: " << aux.getDesconto() * 100 << "%" << endl;
+	cout << "Porcentagem de Desconto Possï¿½vel: " << aux.getDesconto() * 100 << "%" << endl;
 	if(aux.verificaDesconto(estoque_atual) == true)
 	{
-		cout << "O desconto será aplicado ao produto" << endl;
+		cout << "O desconto serï¿½ aplicado ao produto" << endl;
 	} 
 	else
 	{
-		cout << "O desconto não será aplicado ao produto" << endl;
+		cout << "O desconto nï¿½o serï¿½ aplicado ao produto" << endl;
 	}
-	cout << "Preço atual do Produto: " << aux.getPrecoAtual(estoque_atual) << " R$" << endl;
+	cout << "Preï¿½o atual do Produto: " << aux.getPrecoAtual(estoque_atual) << " R$" << endl;
 }

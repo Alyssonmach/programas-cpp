@@ -1,9 +1,7 @@
-// Implementação de um programa que simula o gerenciamento de imóveis - mainImovel.cpp
+// Implementaï¿½ï¿½o de um programa que simula o gerenciamento de imï¿½veis - mainImovel.cpp
 
-// Aluno Alysson Machado de Oliveira Barbosa
-// Matrícula: 119110236
-// Técnicas de Programação (C++) - Salerno
-// Unidade 06 - Laboratório 16 
+// Tï¿½cnicas de Programaï¿½ï¿½o (C++) - Salerno
+// Unidade 06 - Laboratï¿½rio 16 
 // Ambiente de Desenvolvimento: Falcon C++
 
 #include <iostream>
@@ -18,7 +16,7 @@ using namespace std;
 #include "Novo.cpp"
 #include "Velho.cpp"
 
-// Definindo cabeçalhos de funções para impressão dos métodos das classes
+// Definindo cabeï¿½alhos de funï¿½ï¿½es para impressï¿½o dos mï¿½todos das classes
 void ImovelNovo(class Novo);
 void ImovelVelho(class Velho);
 
@@ -32,22 +30,22 @@ int main(void)
 	
 	cout << fixed << setprecision(2);
 	
-	// Objetos ou instâncias das classes
+	// Objetos ou instï¿½ncias das classes
 	Novo casa_nova(" ", 0, " ", " ", 0.0);
 	Velho casa_velha(" ", 0, " ", " ", 0.0);
 	
 	do
 	{
-		cout << "=== Programa de Análise Residenciais ===" << endl << endl;
+		cout << "=== Programa de Anï¿½lise Residenciais ===" << endl << endl;
 		
-		cout << "Escolha uma opção: " << endl;
+		cout << "Escolha uma opï¿½ï¿½o: " << endl;
 		
 		cout << "1 - Configurar dados da casa nova;" << endl;
 		cout << "2 - Configurar dados da casa antiga;" << endl;
 		cout << "3 - Visualizar dados da casa nova;" << endl;
 		cout << "4 - Visualizar dados da casa antiga;" << endl;
 		cout << "5 - Sair do programa;" << endl << endl;
-		cout << "Insira uma opção: ";
+		cout << "Insira uma opï¿½ï¿½o: ";
 		cin >> opcao;
 		
 		system("pause");
@@ -59,7 +57,7 @@ int main(void)
 			cout << "Informe a rua onde a casa se localiza: ";
 			getline(cin, rua);
 			
-			cout << "Informe o número da casa: ";
+			cout << "Informe o nï¿½mero da casa: ";
 			cin >> numero;
 			
 			cin.ignore();
@@ -71,12 +69,12 @@ int main(void)
 			
 			casa_nova.setEndereco(rua, numero, bairro, cep);
 			
-			cout << "Informe o preço da casa: ";
+			cout << "Informe o preï¿½o da casa: ";
 			cin >> preco;
 			
 			casa_nova.setPreco(preco);
 			
-			cout << "Informe uma taxa de aumento no preço da casa [0,1]: ";
+			cout << "Informe uma taxa de aumento no preï¿½o da casa [0,1]: ";
 			cin >> taxa;
 			
 			Novo::setAumenta(taxa);
@@ -92,7 +90,7 @@ int main(void)
 			cout << "Informe a rua onde a casa se localiza: ";
 			getline(cin, rua);
 			
-			cout << "Informe o número da casa: ";
+			cout << "Informe o nï¿½mero da casa: ";
 			cin >> numero;
 			
 			cin.ignore();
@@ -104,12 +102,12 @@ int main(void)
 			
 			casa_velha.setEndereco(rua, numero, bairro, cep);
 			
-			cout << "Informe o preço da casa: ";
+			cout << "Informe o preï¿½o da casa: ";
 			cin >> preco;
 			
 			casa_velha.setPreco(preco);
 			
-			cout << "Informe uma taxa de decréscimo no preço da casa [0,1]: ";
+			cout << "Informe uma taxa de decrï¿½scimo no preï¿½o da casa [0,1]: ";
 			cin >> taxa;
 			
 			Velho::setAumenta(taxa);
@@ -133,7 +131,7 @@ int main(void)
 		}
 		else
 		{
-			cout << "Entrada Inválida. Tente Novamente." << endl << endl;
+			cout << "Entrada Invï¿½lida. Tente Novamente." << endl << endl;
 		}
 		
 		system("pause");
@@ -149,11 +147,11 @@ void ImovelNovo(class Novo aux)
 	cout << "Endereco da casa: " << endl;
 	aux.getEndereco();
 	
-	cout << "Taxa de Acréscimo no preço da casa: " << Novo::getAumenta() << endl;
+	cout << "Taxa de Acrï¿½scimo no preï¿½o da casa: " << Novo::getAumenta() << endl;
 	
-	cout << "Preço da casa: " << aux.getPreco() << " R$" << endl;
+	cout << "Preï¿½o da casa: " << aux.getPreco() << " R$" << endl;
 	
-	cout << "Preço com taxa de aumento: " << aux.getPrecoAumento() << " R$" << endl;
+	cout << "Preï¿½o com taxa de aumento: " << aux.getPrecoAumento() << " R$" << endl;
 
 	return;
 }
@@ -163,11 +161,11 @@ void ImovelVelho(class Velho aux)
 	cout << "Endereco da casa: " << endl;
 	aux.getEndereco();
 	
-	cout << "Taxa de Decréscimo no preço da casa: " << Velho::getDecrescenta() << endl;
+	cout << "Taxa de Decrï¿½scimo no preï¿½o da casa: " << Velho::getDecrescenta() << endl;
 	
-	cout << "Preço da casa: " << aux.getPreco() << " R$" << endl;
+	cout << "Preï¿½o da casa: " << aux.getPreco() << " R$" << endl;
 	
-	cout << "Preço com taxa de decrescimento: " << aux.getPrecoDesconto() << " R$" << endl;
+	cout << "Preï¿½o com taxa de decrescimento: " << aux.getPrecoDesconto() << " R$" << endl;
 
 	return;
 }

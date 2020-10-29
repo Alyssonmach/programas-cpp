@@ -1,9 +1,7 @@
-// Programa de tributação de impostos em empresas - MedioPorte.cpp
+// Programa de tributaï¿½ï¿½o de impostos em empresas - MedioPorte.cpp
 
-// Aluno Alysson Machado de Oliveira Barbosa
-// Matrícula: 119110236
-// Técnicas de Programação (C++) - Salerno
-// Unidade 06 - Laboratório 18
+// Tï¿½cnicas de Programaï¿½ï¿½o (C++) - Salerno
+// Unidade 06 - Laboratï¿½rio 18
 // Ambiente de Desenvolvimento: Falcon C++
 
 #include "MedioPorte.h"
@@ -14,13 +12,13 @@ MedioPorte::MedioPorte(string nome, long int cgc, float faturamento, float impos
 	this -> impostos = (impostos > 0) ? impostos : 0;
 }
 
-// método que configura os impostos
+// mï¿½todo que configura os impostos
 void MedioPorte::setImpostos(float impostos)
 {
 	this -> impostos = (impostos > 0) ? impostos : 0;
 }
 
-// método que retorna os impostos
+// mï¿½todo que retorna os impostos
 float MedioPorte::getImpostos(void) const
 {
 	return(impostos * getFaturamento());

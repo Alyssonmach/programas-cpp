@@ -1,9 +1,7 @@
-// Implementação de um programa que cadastra usuários em laboratório - Aluno.h
+// Implementaï¿½ï¿½o de um programa que cadastra usuï¿½rios em laboratï¿½rio - Aluno.h
 
-// Aluno Alysson Machado de Oliveira Barbosa
-// Matrícula: 119110236
-// Técnicas de Programação (C++) - Salerno
-// Unidade 06 - Laboratório 19 
+// Tï¿½cnicas de Programaï¿½ï¿½o (C++) - Salerno
+// Unidade 06 - Laboratï¿½rio 19 
 // Ambiente de Desenvolvimento: Falcon C++
 
 #ifndef ALUNO_H
@@ -11,7 +9,7 @@
 
 #include "Usuario.h"
 
-// definindo a classe Aluno que herda de usuário
+// definindo a classe Aluno que herda de usuï¿½rio
 class Aluno : public Usuario
 {
 	// especificador de acesso private
@@ -23,7 +21,7 @@ class Aluno : public Usuario
     public:
     	// construtor da classe
     	Aluno(string = " ", string = " ", int = 0, string = " ", string = " ");
-    	// membros de funções da classe
+    	// membros de funï¿½ï¿½es da classe
     	string getMatricula(void) const;
     	string getCurso(void) const;
 };

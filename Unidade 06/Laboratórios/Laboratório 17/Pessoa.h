@@ -1,9 +1,7 @@
-// Implementação de um programa que simula o registro de empregados - Pessoa.h
+// Implementaï¿½ï¿½o de um programa que simula o registro de empregados - Pessoa.h
 
-// Aluno Alysson Machado de Oliveira Barbosa
-// Matrícula: 119110236
-// Técnicas de Programação (C++) - Salerno
-// Unidade 06 - Laboratório 17 
+// Tï¿½cnicas de Programaï¿½ï¿½o (C++) - Salerno
+// Unidade 06 - Laboratï¿½rio 17 
 // Ambiente de Desenvolvimento: Falcon C++
 
 #ifndef PESSOA_H

@@ -1,9 +1,7 @@
 // Programa gerenciador de estoque em produto - Produto.h
 
-// Aluno Alysson Machado de Oliveira Barbosa
-// Matrícula: 119110236
-// Técnicas de Programação (C++) - Salerno
-// Unidade 06 - Laboratório 20
+// Tï¿½cnicas de Programaï¿½ï¿½o (C++) - Salerno
+// Unidade 06 - Laboratï¿½rio 20
 // Ambiente de Desenvolvimento: Falcon C++
 
 #ifndef PRODUTO_H

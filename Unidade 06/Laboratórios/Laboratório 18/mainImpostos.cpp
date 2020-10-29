@@ -1,9 +1,7 @@
-// Programa de tributação de impostos em empresas - mainImpostos.cpp
+// Programa de tributaï¿½ï¿½o de impostos em empresas - mainImpostos.cpp
 
-// Aluno Alysson Machado de Oliveira Barbosa
-// Matrícula: 119110236
-// Técnicas de Programação (C++) - Salerno
-// Unidade 06 - Laboratório 18
+// Tï¿½cnicas de Programaï¿½ï¿½o (C++) - Salerno
+// Unidade 06 - Laboratï¿½rio 18
 // Ambiente de Desenvolvimento: Falcon C++
 
 #include <iostream>
@@ -14,16 +12,16 @@
 
 using namespace std;
 
-// cabeçalho das classes definidas
+// cabeï¿½alho das classes definidas
 #include "Empresa.cpp"
 #include "MedioPorte.cpp"
 #include "PequenoPorte.cpp"
 
-// cabeçalho das funções auxiliares
+// cabeï¿½alho das funï¿½ï¿½es auxiliares
 void visualizaMediaEmpresa(class MedioPorte);
 void visualizaPequenaEmpresa(class PequenoPorte);
 
-// função principal do programa
+// funï¿½ï¿½o principal do programa
 int main(void)
 {
 	setlocale(LC_ALL, "Portuguese");
@@ -34,18 +32,18 @@ int main(void)
 	long int cgc;
 	float faturamento;
 	
-	// Instâncias ou objetos da classe
+	// Instï¿½ncias ou objetos da classe
 	MedioPorte empresa_media(" ", 0, 0.0);
 	PequenoPorte empresa_pequena(" ", 0, 0.0, false);
 	
 	do
 	{
 		
-		cout << "=== Programa Tributação de Impostos em Empresas ===" << endl << endl;
+		cout << "=== Programa Tributaï¿½ï¿½o de Impostos em Empresas ===" << endl << endl;
 		
-		cout << "Escolha uma opção:" << endl;
-		cout << "1 - Cadastrar Média Empresa;" << endl;
-		cout << "2 - Visualizar dados da Média Empresa;" << endl;
+		cout << "Escolha uma opï¿½ï¿½o:" << endl;
+		cout << "1 - Cadastrar Mï¿½dia Empresa;" << endl;
+		cout << "2 - Visualizar dados da Mï¿½dia Empresa;" << endl;
 		cout << "3 - Cadastrar Pequena Empresa;" << endl;
 		cout << "4 - Visualizar dados da Pequena Empresa;" << endl;
 		cout << "5 - Sair do Programa;" << endl << endl;
@@ -79,10 +77,10 @@ int main(void)
 				cout << "Informe o faturamento da empresa: ";
 				cin >> faturamento;
 				
-				cout << "A empresa está cadastrada no SIMPLES?" << endl;
+				cout << "A empresa estï¿½ cadastrada no SIMPLES?" << endl;
 				cout << "1 - sim;" << endl;
-				cout << "2 - não;" << endl;
-				cout << "Escolha sua opção: ";
+				cout << "2 - nï¿½o;" << endl;
+				cout << "Escolha sua opï¿½ï¿½o: ";
 				cin >> opcao_aux;
 				
 				if(opcao_aux == 1)
@@ -111,7 +109,7 @@ int main(void)
 		}
 		else 
 		{
-            cout << "Entrada Inválida. Tente novamente." << endl << endl;	
+            cout << "Entrada Invï¿½lida. Tente novamente." << endl << endl;	
 		}
 		
 		cout << endl << endl;
@@ -123,17 +121,17 @@ int main(void)
 	return 0;
 }
 
-// função que imprime os dados da media empresa
+// funï¿½ï¿½o que imprime os dados da media empresa
 void visualizaMediaEmpresa(MedioPorte aux)
 {
 	cout << "Nome: " << aux.getNome() << endl;
 	cout << "CGC: " << aux.getCGC() << endl;
 	cout << "Impostos a serem pagos: " << aux.getImpostos() << " R$" << endl;
 	cout << "Faturamento Bruto da Empresa: " << aux.getFaturamento() << " R$" << endl;
-	cout << "Faturamento Líquido da Empresa: " << aux.getFaturamento() - aux.getImpostos() << " R$" << endl;
+	cout << "Faturamento Lï¿½quido da Empresa: " << aux.getFaturamento() - aux.getImpostos() << " R$" << endl;
 }
 
-// função que imprime os dados da pequena empresa
+// funï¿½ï¿½o que imprime os dados da pequena empresa
 void visualizaPequenaEmpresa(PequenoPorte aux)
 {
 	cout << "Nome: " << aux.getNome() << endl;
@@ -141,5 +139,5 @@ void visualizaPequenaEmpresa(PequenoPorte aux)
 	cout << "Impostos a serem pagos: " << aux.getImpostos() << " R$" << endl;
 	cout << "Cadastro no SIMPLES: " << aux.getSIMPLES() << endl;
 	cout << "Faturamento Bruto da Empresa: " << aux.getFaturamento() << " R$" << endl;
-	cout << "Faturamento Líquido da Empresa: " << aux.getFaturamento() - aux.getImpostos() << " R$" << endl;
+	cout << "Faturamento Lï¿½quido da Empresa: " << aux.getFaturamento() - aux.getImpostos() << " R$" << endl;
 }
