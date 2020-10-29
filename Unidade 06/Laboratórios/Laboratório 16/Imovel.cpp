@@ -1,9 +1,7 @@
-// Implementação de um programa que simula o gerenciamento de imóveis - Imovel.cpp
+// Implementaï¿½ï¿½o de um programa que simula o gerenciamento de imï¿½veis - Imovel.cpp
 
-// Aluno Alysson Machado de Oliveira Barbosa
-// Matrícula: 119110236
-// Técnicas de Programação (C++) - Salerno
-// Unidade 06 - Laboratório 16 
+// Tï¿½cnicas de Programaï¿½ï¿½o (C++) - Salerno
+// Unidade 06 - Laboratï¿½rio 16 
 // Ambiente de Desenvolvimento: Falcon C++
 
 #include "Imovel.h"
