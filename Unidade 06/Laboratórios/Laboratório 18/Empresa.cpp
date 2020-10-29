@@ -9,10 +9,11 @@
 #include "Empresa.h"
 
 // definindo o construtor da classe
-Empresa::Empresa(string nome, long int cgc)
+Empresa::Empresa(string nome, long int cgc, float faturamento)
 {
 	this -> nome = nome;
 	this -> cgc = (cgc > 0) ? cgc : 0;
+	this -> faturamento = (faturamento > 0) ? faturamento : 0;
 }
 
 // método que retorna o nome da empresa
@@ -25,4 +26,10 @@ string Empresa::getNome(void) const
 long int Empresa::getCGC(void) const
 {
 	return cgc;
+}
+
+// método que retorna o faturamento da empresa
+float Empresa::getFaturamento(void) const
+{
+	return faturamento;
 }

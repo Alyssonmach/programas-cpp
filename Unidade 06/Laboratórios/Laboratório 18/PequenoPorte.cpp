@@ -9,7 +9,7 @@
 #include "PequenoPorte.h"
 
 // definindo o construtor da classe
-PequenoPorte::PequenoPorte(string nome, long int cgc, float impostos, bool simples) : Empresa(nome, cgc)
+PequenoPorte::PequenoPorte(string nome, long int cgc, float faturamento, float impostos, bool simples) : Empresa(nome, cgc, faturamento)
 {
 	this -> impostos = impostos;
 	this -> simples = simples;
@@ -25,9 +25,9 @@ void PequenoPorte::setImpostos(float impostos)
 float PequenoPorte::getImpostos(void) const
 {
 	if(simples == true)
-		return (impostos - (0.7 * impostos));
+		return ((impostos * getFaturamento()) - (0.7 * (impostos * getFaturamento())));
 	else 
-		return (impostos - (0.5 * impostos));
+		return ((impostos * getFaturamento()) - (0.5 * (impostos * getFaturamento())));
 }
 
 // método que retorna a situação de cadastro da pequena empresa no SIMPLES

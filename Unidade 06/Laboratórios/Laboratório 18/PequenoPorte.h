@@ -22,7 +22,7 @@ class PequenoPorte : public Empresa
     // especificador de acesso public
     public:
     	// construtor da classe
-    	PequenoPorte(string = " ", long int = 0, float = 0.0, bool = false);
+    	PequenoPorte(string = " ", long int = 0, float = 0.0, float = 0.0, bool = false);
     	// membros de funções da classe
     	void setImpostos(float);
     	float getImpostos(void) const;

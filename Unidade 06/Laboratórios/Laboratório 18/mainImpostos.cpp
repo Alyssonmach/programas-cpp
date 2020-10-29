@@ -32,7 +32,7 @@ int main(void)
 	string nome;
 	int opcao;
 	long int cgc;
-	float impostos = 0;
+	float faturamento;
 	
 	// Instâncias ou objetos da classe
 	MedioPorte empresa_media(" ", 0, 0.0);
@@ -44,28 +44,19 @@ int main(void)
 		cout << "=== Programa Tributação de Impostos em Empresas ===" << endl << endl;
 		
 		cout << "Escolha uma opção:" << endl;
-		cout << "1 - Cadastrar Tributação Bruta de Impostos;" << endl;
-		cout << "2 - Cadastrar Média Empresa;" << endl;
-		cout << "3 - Visualizar dados da Média Empresa;" << endl;
-		cout << "4 - Cadastrar Pequena Empresa;" << endl;
-		cout << "5 - Visualizar dados da Pequena Empresa;" << endl;
-		cout << "6 - Sair do Programa;" << endl << endl;
+		cout << "1 - Cadastrar Média Empresa;" << endl;
+		cout << "2 - Visualizar dados da Média Empresa;" << endl;
+		cout << "3 - Cadastrar Pequena Empresa;" << endl;
+		cout << "4 - Visualizar dados da Pequena Empresa;" << endl;
+		cout << "5 - Sair do Programa;" << endl << endl;
 		cout << "Informe sua opcao: ";
 		cin >> opcao;
 		
 		cout << endl << endl;
 		system("pause");
-		system("cls");
+		system("cls");	
 		
-		if(opcao == 1)
-		{
-			cout << "Informe a tributação bruta de impostos das empresas: ";
-			cin >> impostos;
-			
-			empresa_media.setImpostos(impostos);
-			empresa_pequena.setImpostos(impostos);
-		}
-		else if(opcao == 2 || opcao == 4)
+		if(opcao == 1 || opcao == 3)
 		{
 			cin.ignore();
 			cout << "Informe o nome da empresa: ";
@@ -73,14 +64,20 @@ int main(void)
 			cout << "Informe o CGC da empresa: ";
 			cin >> cgc;
 			
-			if(opcao == 2)
+			if(opcao == 1)
 			{
-				MedioPorte aux(nome, cgc, impostos);
+				cout << "Informe o faturamento da empresa: ";
+				cin >> faturamento;
+				
+				MedioPorte aux(nome, cgc, faturamento, 0.17);
 				empresa_media = aux;
 			}
 			else
 			{
 				int opcao_aux;
+				
+				cout << "Informe o faturamento da empresa: ";
+				cin >> faturamento;
 				
 				cout << "A empresa está cadastrada no SIMPLES?" << endl;
 				cout << "1 - sim;" << endl;
@@ -90,25 +87,25 @@ int main(void)
 				
 				if(opcao_aux == 1)
 				{
-					PequenoPorte aux(nome, cgc, impostos, true);
+					PequenoPorte aux(nome, cgc, faturamento, 0.17, true);
 					empresa_pequena = aux;
 				}
 				else 
 				{
-                    PequenoPorte aux(nome, cgc, impostos, false);
+                    PequenoPorte aux(nome, cgc, faturamento, 0.17, false);
                     empresa_pequena = aux;
 				}
 					
 			}
 		}
-		else if(opcao == 3 || opcao == 5)
+		else if(opcao == 2 || opcao == 4)
 		{
-			if(opcao == 3)
+			if(opcao == 2)
 				visualizaMediaEmpresa(empresa_media);
 			else 
 				visualizaPequenaEmpresa(empresa_pequena);
 		}
-		else if(opcao == 6)
+		else if(opcao == 5)
 		{
 			cout << "Saindo do programa." << endl << endl;
 		}
@@ -121,7 +118,7 @@ int main(void)
 		system("pause");
 		system("cls");
 		
-	}while(opcao != 6);
+	}while(opcao != 5);
 	
 	return 0;
 }
@@ -131,7 +128,9 @@ void visualizaMediaEmpresa(MedioPorte aux)
 {
 	cout << "Nome: " << aux.getNome() << endl;
 	cout << "CGC: " << aux.getCGC() << endl;
-	cout << "Impostos: " << aux.getImpostos() << " R$" << endl;
+	cout << "Impostos a serem pagos: " << aux.getImpostos() << " R$" << endl;
+	cout << "Faturamento Bruto da Empresa: " << aux.getFaturamento() << " R$" << endl;
+	cout << "Faturamento Líquido da Empresa: " << aux.getFaturamento() - aux.getImpostos() << " R$" << endl;
 }
 
 // função que imprime os dados da pequena empresa
@@ -139,6 +138,8 @@ void visualizaPequenaEmpresa(PequenoPorte aux)
 {
 	cout << "Nome: " << aux.getNome() << endl;
 	cout << "CGC: " << aux.getCGC() << endl;
-	cout << "Impostos: " << aux.getImpostos() << " R$" << endl;
+	cout << "Impostos a serem pagos: " << aux.getImpostos() << " R$" << endl;
 	cout << "Cadastro no SIMPLES: " << aux.getSIMPLES() << endl;
+	cout << "Faturamento Bruto da Empresa: " << aux.getFaturamento() << " R$" << endl;
+	cout << "Faturamento Líquido da Empresa: " << aux.getFaturamento() - aux.getImpostos() << " R$" << endl;
 }
