@@ -1,9 +1,7 @@
 // Implementando um programa que simula um condicionador - Condicionador.h
 
-// Aluno Alysson Machado de Oliveira Barbosa
-// Matrícula: 119110236
-// Técnicas de Programação (C++) - Salerno
-// Unidade 04 - Laboratório 12 
+// Tï¿½cnicas de Programaï¿½ï¿½o (C++) - Salerno
+// Unidade 04 - Laboratï¿½rio 12 
 
 #ifndef CONDICIONADOR_H
 #define CONDICIONADOR_H
@@ -16,12 +14,12 @@ class Condicionador
 		// Utilizando sobrecarga de construtores
 		Condicionador(void);
 		Condicionador(float, float);
-		// Membros de funções da classe
+		// Membros de funï¿½ï¿½es da classe
 		void setTemperatura(float);
 		void setPotencia(float);
 		float getTemperatura(void);
 		float getPotencia(void);
-    // Especificação de acesso private
+    // Especificaï¿½ï¿½o de acesso private
 	private:
 		// Membros de dados da classe
 		float temperatura, potencia;

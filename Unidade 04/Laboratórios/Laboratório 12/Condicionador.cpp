@@ -1,52 +1,50 @@
 // Implementando um programa que simula um condicionador - Condicionador.cpp
 
-// Aluno Alysson Machado de Oliveira Barbosa
-// Matrícula: 119110236
-// Técnicas de Programação (C++) - Salerno
-// Unidade 04 - Laboratório 12 
+// Tï¿½cnicas de Programaï¿½ï¿½o (C++) - Salerno
+// Unidade 04 - Laboratï¿½rio 12 
 
 #include "Condicionador.h"
 
-// Definindo o construtor sem parâmetros
+// Definindo o construtor sem parï¿½metros
 Condicionador::Condicionador(void)
 {
 	temperatura = potencia = 0;
 }
 
-// Definindo o construtor com parâmetros
+// Definindo o construtor com parï¿½metros
 Condicionador::Condicionador(float temp, float pot)
 {
 	temperatura = temp;
 	potencia = (pot >= 0 && pot <= 10) ? pot : 0;
 }
 
-// Método da classe responsável por ajustar a nova temperatura de acordo com a 
-// potência
+// Mï¿½todo da classe responsï¿½vel por ajustar a nova temperatura de acordo com a 
+// potï¿½ncia
 void Condicionador::ajustaCondicionador(void)
 {
 	temperatura = temperatura - (potencia * 1.8);
 }
 
-// Método da classe responsável por configurar o valor da temperatura
+// Mï¿½todo da classe responsï¿½vel por configurar o valor da temperatura
 void Condicionador::setTemperatura(float temp)
 {
 	temperatura = temp;
 }
 
-// Método da classe responsável por configurar a potência
+// Mï¿½todo da classe responsï¿½vel por configurar a potï¿½ncia
 void Condicionador::setPotencia(float pot)
 {
 	potencia = (pot >= 0 && pot <= 10) ? pot : 0;
 }
 
-// Método da classe responsável por retornar a temperatura
+// Mï¿½todo da classe responsï¿½vel por retornar a temperatura
 float Condicionador::getTemperatura(void)
 {
 	ajustaCondicionador();
 	return temperatura;
 }
 
-// Método da classe responsável por retornar a potência
+// Mï¿½todo da classe responsï¿½vel por retornar a potï¿½ncia
 float Condicionador::getPotencia(void)
 {
 	return potencia;

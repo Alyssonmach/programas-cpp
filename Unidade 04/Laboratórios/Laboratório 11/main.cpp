@@ -1,9 +1,7 @@
-// Implementando um programa que simula um relógio digital - main.cpp
+// Implementando um programa que simula um relï¿½gio digital - main.cpp
 
-// Aluno Alysson Machado de Oliveira Barbosa
-// Matrícula: 119110236
-// Técnicas de Programação (C++) - Salerno
-// Unidade 04 - Laboratório 11
+// Tï¿½cnicas de Programaï¿½ï¿½o (C++) - Salerno
+// Unidade 04 - Laboratï¿½rio 11
 
 #include <iostream>
 #include "Relogio.cpp"
@@ -14,20 +12,20 @@
 
 using namespace std;
 
-// Cabeçalho da função 
+// Cabeï¿½alho da funï¿½ï¿½o 
 void menuRelogio(class Relogio);
 
-// Função principal do programa
+// Funï¿½ï¿½o principal do programa
 int main(void)
 {
 	setlocale(LC_ALL, "Portuguese");
 	
-	// Instância ou objeto da classe
+	// Instï¿½ncia ou objeto da classe
 	Relogio meuRelogio;
 	
 	int h, m, s;
 	
-	cout << "Programa Meu Relógio Pessoal" << endl << endl;
+	cout << "Programa Meu Relï¿½gio Pessoal" << endl << endl;
 	
 	cout << "Insira a hora atual: ";
 	cin >> h;
@@ -47,17 +45,17 @@ int main(void)
 	return 0;
 }
 
-// Criando um menu para o relógio
+// Criando um menu para o relï¿½gio
 void menuRelogio(Relogio rel)
 {
 	int hora, minuto, segundo;
 	
 	do
 	{
-		// Retorno usando passagem por referência
+		// Retorno usando passagem por referï¿½ncia
 		rel.getHora(&hora, &minuto, &segundo);
 		
-		cout << "Meu Relógio Pessoal" << endl << endl;
+		cout << "Meu Relï¿½gio Pessoal" << endl << endl;
 		
 		cout << setfill('0') << setw(2) << hora << ":";
 		cout << setfill('0') << setw(2) << minuto << ":";

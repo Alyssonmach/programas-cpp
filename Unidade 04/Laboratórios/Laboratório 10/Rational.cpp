@@ -1,9 +1,7 @@
-// Implementando um programa de aritmética de frações - Rational.cpp
+// Implementando um programa de aritmï¿½tica de fraï¿½ï¿½es - Rational.cpp
 
-// Aluno Alysson Machado de Oliveira Barbosa
-// Matrícula: 119110236
-// Técnicas de Programação (C++) - Salerno
-// Unidade 03 - Laboratório 10 
+// Tï¿½cnicas de Programaï¿½ï¿½o (C++) - Salerno
+// Unidade 03 - Laboratï¿½rio 10 
 
 #include <iostream>
 using std::cout;
@@ -13,22 +11,22 @@ using std::endl;
 #include "Rational.h"
 
 
-// Implementação do construtor sem parâmetros da classe
+// Implementaï¿½ï¿½o do construtor sem parï¿½metros da classe
 Rational::Rational(void)
 {
 	numerador = 0;
 	denominador = 1;
 }
 
-// Implementação do construtor com parâmetros da classe
+// Implementaï¿½ï¿½o do construtor com parï¿½metros da classe
 Rational::Rational(int num, int den)
 {
 	numerador = num;
 	denominador = den;
 }
-// Implementação dos métodos dos membros de função da classe
+// Implementaï¿½ï¿½o dos mï¿½todos dos membros de funï¿½ï¿½o da classe
 
-// Membro responsável por realizar a multiplicação entre frações
+// Membro responsï¿½vel por realizar a multiplicaï¿½ï¿½o entre fraï¿½ï¿½es
 void Rational::multiplicaRational(Rational num1, Rational num2)
 {
 	if(num1.denominador != 0 && num2.denominador != 0)
@@ -37,11 +35,11 @@ void Rational::multiplicaRational(Rational num1, Rational num2)
 		denominador = num1.denominador * num2.denominador;
 	}
 	
-	cout << "O valor resultante da multiplicação é: " << float(numerador) / float(denominador) << endl;
-	cout << "Em frações, teremos: " << numerador << "/" << denominador << endl << endl;
+	cout << "O valor resultante da multiplicaï¿½ï¿½o ï¿½: " << float(numerador) / float(denominador) << endl;
+	cout << "Em fraï¿½ï¿½es, teremos: " << numerador << "/" << denominador << endl << endl;
 }
 
-// Membro responsável por realizar a divisão entre frações
+// Membro responsï¿½vel por realizar a divisï¿½o entre fraï¿½ï¿½es
 void Rational::divideRational(Rational num1, Rational num2)
 {
 	if(num1.denominador != 0 && num2.denominador != 0)
@@ -50,8 +48,8 @@ void Rational::divideRational(Rational num1, Rational num2)
 		denominador = num1.denominador * num2.numerador;
 	}
 	
-	cout << "O valor resultante da divisão é: " << float(numerador) / float(denominador) << endl;
-	cout << "Em frações, teremos: " << numerador << "/" << denominador << endl << endl;
+	cout << "O valor resultante da divisï¿½o ï¿½: " << float(numerador) / float(denominador) << endl;
+	cout << "Em fraï¿½ï¿½es, teremos: " << numerador << "/" << denominador << endl << endl;
 }
 
 void Rational::setRational(int num, int den)

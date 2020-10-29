@@ -1,9 +1,7 @@
-// Implementando um programa de aritmética de frações - Rational.h
+// Implementando um programa de aritmï¿½tica de fraï¿½ï¿½es - Rational.h
 
-// Aluno Alysson Machado de Oliveira Barbosa
-// Matrícula: 119110236
-// Técnicas de Programação (C++) - Salerno
-// Unidade 03 - Laboratório 10
+// Tï¿½cnicas de Programaï¿½ï¿½o (C++) - Salerno
+// Unidade 03 - Laboratï¿½rio 10
 
 #ifndef Rational_H
 #define Rational_H
@@ -16,10 +14,10 @@ class Rational
 		// membros de dados da classe
 		int numerador, denominador;
 	public:
-		// Aplicando construtores sobrecarregados (com e sem parâmetros)
+		// Aplicando construtores sobrecarregados (com e sem parï¿½metros)
 		Rational();
 		Rational(int, int);
-		// Membros de funções da classe
+		// Membros de funï¿½ï¿½es da classe
 		void multiplicaRational(Rational, Rational);
 		void divideRational(Rational, Rational);
 		void setRational(int, int);

@@ -1,9 +1,7 @@
-// Implementando um programa que simula um relógio digital - Relogio.h
+// Implementando um programa que simula um relï¿½gio digital - Relogio.h
 
-// Aluno Alysson Machado de Oliveira Barbosa
-// Matrícula: 119110236
-// Técnicas de Programação (C++) - Salerno
-// Unidade 04 - Laboratório 11
+// Tï¿½cnicas de Programaï¿½ï¿½o (C++) - Salerno
+// Unidade 04 - Laboratï¿½rio 11
 
 #ifndef RELOGIO_H
 #define RELOGIO_H
@@ -19,7 +17,7 @@ class Relogio
 	public:
 		// Construtor da classe
 		Relogio(void);
-		// Membros de função da classe
+		// Membros de funï¿½ï¿½o da classe
 		void setHora(int, int, int);
 		void getHora(int*, int*, int*);
 		void passaSegundo(void);

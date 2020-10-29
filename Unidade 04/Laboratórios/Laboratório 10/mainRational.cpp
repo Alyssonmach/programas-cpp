@@ -1,9 +1,7 @@
-// Implementando um programa de aritmética de frações - mainRationa.cpp
+// Implementando um programa de aritmï¿½tica de fraï¿½ï¿½es - mainRationa.cpp
 
-// Aluno Alysson Machado de Oliveira Barbosa
-// Matrícula: 119110236
-// Técnicas de Programação (C++) - Salerno
-// Unidade 03 - Laboratório 10
+// Tï¿½cnicas de Programaï¿½ï¿½o (C++) - Salerno
+// Unidade 03 - Laboratï¿½rio 10
 
 #include <locale>
 #include <iomanip>
@@ -12,30 +10,30 @@
 
 using namespace std;
 
-// Função principal do programa
+// Funï¿½ï¿½o principal do programa
 int main(void)
 {
 	setlocale(LC_ALL, "portuguese");
 	
-	// Instância ou objetos da classe
+	// Instï¿½ncia ou objetos da classe
 	Rational n1(0, 1), n2(0, 1), r;
 	
 	int num1, num2, den1, den2;
 	
 	cout << fixed << setprecision(3);
 	
-	cout << "=== Programa operações com frações ===" << endl << endl;
+	cout << "=== Programa operaï¿½ï¿½es com fraï¿½ï¿½es ===" << endl << endl;
 	
-	cout << "Informe o numerador do primeiro número: ";
+	cout << "Informe o numerador do primeiro nï¿½mero: ";
 	cin >> num1;
 	
-	cout << "Informe o denominador do primeiro número: ";
+	cout << "Informe o denominador do primeiro nï¿½mero: ";
 	cin >> den1;
 	
-	cout << "Informe o numerador do segundo número: ";
+	cout << "Informe o numerador do segundo nï¿½mero: ";
 	cin >> num2;
 	
-	cout << "Informe o denominador do segundo número: ";
+	cout << "Informe o denominador do segundo nï¿½mero: ";
 	cin >> den2;
 	
 	n1.setRational(num1, den1);
@@ -43,17 +41,17 @@ int main(void)
 	
 	cout << endl;
 	
-	// Atribui a r o resultado da multiplicação 
+	// Atribui a r o resultado da multiplicaï¿½ï¿½o 
 	r.multiplicaRational(n1, n2);
 	
-	// Obtém os dados armazenados no objeto r
-	cout << "Os dados de r são: " << r.getNumerador() << "/" << r.getDenominador() << endl << endl;
+	// Obtï¿½m os dados armazenados no objeto r
+	cout << "Os dados de r sï¿½o: " << r.getNumerador() << "/" << r.getDenominador() << endl << endl;
 	
-	// Atribui a r o resultado da divisão 
+	// Atribui a r o resultado da divisï¿½o 
 	r.divideRational(n1, n2);
 	
-	// Obtém os dados armazenados no objeto r
-	cout << "Os dados de r são: " << r.getNumerador() << "/" << r.getDenominador() << endl;
+	// Obtï¿½m os dados armazenados no objeto r
+	cout << "Os dados de r sï¿½o: " << r.getNumerador() << "/" << r.getDenominador() << endl;
 	
 	return 0;
 }

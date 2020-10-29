@@ -1,19 +1,17 @@
-// Implementando um programa que simula um relógio digital - Relogio.cpp
+// Implementando um programa que simula um relï¿½gio digital - Relogio.cpp
 
-// Aluno Alysson Machado de Oliveira Barbosa
-// Matrícula: 119110236
-// Técnicas de Programação (C++) - Salerno
-// Unidade 04 - Laboratório 11
+// Tï¿½cnicas de Programaï¿½ï¿½o (C++) - Salerno
+// Unidade 04 - Laboratï¿½rio 11
 
 #include "Relogio.h"
 
-// Definindo um construtor sem parâmetros para a classe relôgio
+// Definindo um construtor sem parï¿½metros para a classe relï¿½gio
 Relogio::Relogio(void)
 {
 	hora = minuto = segundo = 0;
 }
 
-// Método da classe responsável por atualizar os valores do relógio
+// Mï¿½todo da classe responsï¿½vel por atualizar os valores do relï¿½gio
 void Relogio::setHora(int h, int m, int s)
 {
 	hora = (h >= 0 && h <= 23) ? h : 0;
@@ -21,8 +19,8 @@ void Relogio::setHora(int h, int m, int s)
 	segundo = (s >= 0 && s <= 59) ? s : 0;
 }
 
-// Método da classe responsável por retornar os valores do relógio
-// Retorno usando passagem por referência
+// Mï¿½todo da classe responsï¿½vel por retornar os valores do relï¿½gio
+// Retorno usando passagem por referï¿½ncia
 void Relogio::getHora(int *h, int *m, int *s)
 {
 	*h = hora;
@@ -30,7 +28,7 @@ void Relogio::getHora(int *h, int *m, int *s)
 	*s = segundo;
 }
 
-// Método da classe responsável por passar 1 segundo no relógio
+// Mï¿½todo da classe responsï¿½vel por passar 1 segundo no relï¿½gio
 void Relogio::passaSegundo(void)
 {
 	int copia_minuto = minuto;
