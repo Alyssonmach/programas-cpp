@@ -21,8 +21,8 @@ class MedioPorte : public Empresa
     // especificador de acesso public
     public:
     	// construtor da classe
-    	MedioPorte(string = " ", long int = 0, float = 0.0);
-    	// membros de funções da classe
+    	MedioPorte(string = " ", long int = 0, float = 0.0, float = 0.0);
+ 	   // membros de funções da classe
     	void setImpostos(float);
     	float getImpostos(void) const;
 };
