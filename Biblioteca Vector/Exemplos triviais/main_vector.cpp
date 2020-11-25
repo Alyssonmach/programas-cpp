@@ -59,6 +59,9 @@ int main(void)
     {
         cout << num[i] << endl;
     }
+    
+    cout << endl;
+    cout << num2.at(2) << endl;
 
     return 0;
 }
