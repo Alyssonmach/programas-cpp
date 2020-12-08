@@ -1,4 +1,4 @@
-# Desenvolvimento C++ - [Técnicas de Programação - (UFCG)]
+# [Técnicas de Programação - (UFCG)]
 ## Repositório criado para armazenar os laboratórios desenvolvidos durante a disciplina Técnicas de Programação.
 
 ### Tópicos Teóricos Abordados no Repositório
