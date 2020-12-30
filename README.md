@@ -1,21 +1,20 @@
 # [Técnicas de Programação - (UFCG)]
 ## Repositório criado para armazenar os laboratórios desenvolvidos durante a disciplina Técnicas de Programação.
 
-### Tópicos Teóricos Abordados no Repositório
+### Conteúdos 
+```
+- Apresentação Técnicas de Programação
+- Introdução à Programação C++
+- Struct, Union, e Enum
+- Classe e Abstração de Dados
+- Construtores e Destrutores
+- Interface e Implementação
+- Encapsulamento
+- Static, Const, Objeto como Parâmetro
+- Herança
+```
 
-- Aula 01 - Apresentação Técnicas de Programação
-- Aula 02 - Introdução à Programação C++
-- Aula 03 - Struct, Union, e Enum
-- Aula 04 - Classe e Abstração de Dados
-- Aula 05 - Construtores e Destrutores
-- Aula 06 - Interface e Implementação
-- Aula 07 - Encapsulamento - POO
-- Aula 08 - Static, Const, Objeto como Parâmetro
-- Aula 09 - Encapsulamento - POO
-- Aula 10 - Herança
-
-### Unidades de Conteúdos Abordados no Repositório
-
+### Referências de Diretórios 
 - [Unidade 01](https://github.com/Alyssonmach/programas-cpp/tree/master/Unidade%2001)
 - [Unidade 02](https://github.com/Alyssonmach/programas-cpp/tree/master/Unidade%2002)
 - [Unidade 03](https://github.com/Alyssonmach/programas-cpp/tree/master/Unidade%2003)
@@ -27,4 +26,4 @@
 - [Projeto Desenvolvido](https://github.com/Alyssonmach/controle-estoque-vendas)
 
 ### Alguma Dúvida? Entre em Contato Comigo:
-- [Me envie um e-mail](mailto:alysson.barbosa@ee.ufcg.edu.br);
+- [Me envie um e-mail](mailto:alysson.barbosa@ee.ufcg.edu.br)
